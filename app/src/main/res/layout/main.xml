@@ -5,6 +5,23 @@
     android:layout_height="match_parent"
     android:background="@color/main_blue">
 
+
+    <View
+        android:id="@+id/wave_top"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/main_wave_top" />
+
+    <View
+        android:id="@+id/wave_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        tools:layout_editor_absoluteY="858dp"
+        android:background="@drawable/main_wave_bottom" />
+
+
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
@@ -18,9 +35,7 @@
         tools:layout_editor_absoluteX="135dp"
         tools:layout_editor_absoluteY="26dp" />
 
-    <SearchView
-        android:layout_width="352dp"
-        android:layout_height="53dp"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="95dp" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
