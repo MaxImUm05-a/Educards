@@ -20,6 +20,5 @@
         android:strokeWidth="2"
         android:strokeCap="round"
         android:strokeJoin="round"
-        android:strokeColor="#252525"
-        />
+        android:strokeColor="#252525" />
 </vector>
