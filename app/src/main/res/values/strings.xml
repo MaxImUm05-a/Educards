@@ -2,4 +2,10 @@
     <string name="app_name">Educards</string>
     <string name="start_study">Як почати навчання</string>
     <string name="search">Пошук</string>
+    <string name="entry">Вхід</string>
+    <string name="user_name">Ім’я користувача /Email</string>
+    <string name="choose_name">Оберіть мову</string>
+    <string name="password">Пароль</string>
+    <string name="continuee">Продовжити</string>
+    <string name="data_proces">Натискаючи кнопку «Продовжити», ви погоджуєтеся на обробку персональних даних</string>
 </resources>

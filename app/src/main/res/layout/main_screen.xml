@@ -9,33 +9,33 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/name_app"
         android:layout_width="140dp"
         android:layout_height="36dp"
         android:layout_marginHorizontal="8dp"
         android:fontFamily="@font/otomanopee"
-        android:text="Educards"
+        android:text="@string/app_name"
         android:textColor="@color/white_title"
         android:textSize="28dp"
-        tools:text="Educards" />
+        tools:text="@string/app_name" />
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/text_entry"
         android:layout_width="104dp"
         android:layout_height="60dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="52dp"
         android:fontFamily="@font/montserratsemibold"
-        android:text="Вхід"
+        android:text="@string/entry"
         android:textColor="@color/white_title"
         android:textSize="40dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:text="Вхід" />
+        app:layout_constraintTop_toBottomOf="@+id/name_app"
+        tools:text="@string/entry" />
 
     <LinearLayout
         android:id="@+id/linearLayout8"
@@ -47,7 +47,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.285"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintTop_toBottomOf="@+id/text_entry">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -62,7 +62,7 @@
                 android:layout_gravity="center"
                 android:layout_marginStart="24dp"
                 android:fontFamily="@font/montserratsemibold"
-                android:text="Ім’я користувача /Email"
+                android:text="@string/user_name"
                 android:textColor="@color/white_grey"
                 android:textSize="17dp" />
         </LinearLayout>
@@ -80,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="24dp"
-                android:text="Оберіть мову"
+                android:text="@string/choose_name"
                 android:textColor="@color/white_grey"
                 android:textSize="17dp" />
 
@@ -106,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="24dp"
-                android:text="Пароль"
+                android:text="@string/password"
                 android:textColor="@color/white_grey"
                 android:textSize="17dp" />
 
@@ -124,30 +124,33 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/button_cont"
         android:layout_width="350dp"
         android:layout_height="43dp"
         android:layout_marginTop="36dp"
         android:background="@drawable/button_continue"
-        android:text="Продовжити"
-        android:textColor="@android:color/white"
-        android:textAllCaps="false"
-        android:textSize="18sp"
         android:fontFamily="@font/montserratsemibold"
         android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+        android:text="@string/continuee"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8" />
 
     <TextView
         android:layout_width="226dp"
         android:layout_height="31dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/montserratsemibold"
-        android:text="Натискаючи кнопку «Продовжити», ви погоджуєтеся на обробку персональних даних"
-        android:textSize="9dp"
+        android:text="@string/data_proces"
         android:textColor="@color/clean_white"
+        android:textSize="9dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="480dp" />
+        app:layout_constraintTop_toBottomOf="@+id/button_cont" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
