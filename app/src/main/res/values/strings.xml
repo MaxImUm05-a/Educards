@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">Educards</string>
-    <string name="start_study">Як почати навчання</string>
+    <string name="app_name" translatable="false">Educards</string>
     <string name="search">Пошук</string>
     <string name="login">Вхід</string>
     <string name="user_name">Ім’я користувача /Email</string>
@@ -11,8 +10,9 @@
     <string name="havent_acc">Ще не маєте акаунту? Створіть його</string>
     <string name="sign_up">Реєстрація</string>
     <string name="name_usr">Ім’я користувача</string>
-    <string name="gmail_us">Email</string>
+    <string name="gmail_us" translatable="false">Email</string>
     <string name="have_acc">Вже маєте акаунт? Ввійдіть в нього</string>
+    <string name="start_study">Як почати навчання?</string>
 
 
 </resources>
