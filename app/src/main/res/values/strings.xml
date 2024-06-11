@@ -13,6 +13,8 @@
     <string name="name_usr">Ім’я користувача</string>
     <string name="gmail_us">Email</string>
     <string name="have_acc">Вже маєте акаунт? Ввійдіть в нього</string>
-
-
+    <string name="my_prof">Мій профіль</string>
+    <string name="choose_myself">Змінити фото</string>
+    <string name="stand_avat">Обрати стандартну</string>
+    <string name="enter">ввести</string>
 </resources>
