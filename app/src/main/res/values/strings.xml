@@ -1,6 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Educards</string>
-    <string name="start_study">Як почати навчання</string>
     <string name="search">Пошук</string>
     <string name="login">Вхід</string>
     <string name="user_name">Ім’я користувача /Email</string>
@@ -17,4 +17,5 @@
     <string name="choose_myself">Змінити фото</string>
     <string name="stand_avat">Обрати стандартну</string>
     <string name="enter">ввести</string>
+    <string name="start_study" translatable="false">Як почати навчання?</string>
 </resources>
