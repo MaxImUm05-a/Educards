@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="white_title">#FFF6F7F9</color>
-    <color name="main_blue">#FF282E3E</color>
-    <color name="white_blue">#FF3E4967</color>
-    <color name="main_yellow">#FFFFE86B</color>
-    <color name="grey">#FFD9D9D9</color>
-    <color name="white_grey">#FF9DA0A8</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_title">#F6F7F9</color>
+    <color name="main_blue">#282E3E</color>
+    <color name="white_blue">#3E4967</color>
+    <color name="main_yellow">#FFE86B</color>
+    <color name="grey">#D9D9D9</color>
+    <color name="white_grey">#9DA0A8</color>
     <color name="clean_white">#FFFDFD</color>
     <color name="grey_text">#323232</color>
     <color name="logn_sigup">#303030</color>
-
+    <color name="black_grey">#ACACAC</color>
+    <color name="black_text">#CD000000</color>
 
 
 

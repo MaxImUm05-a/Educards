@@ -130,7 +130,7 @@
         android:layout_width="350dp"
         android:layout_height="43dp"
         android:layout_marginTop="36dp"
-        android:background="@drawable/button_continue"
+        android:background="@drawable/ic_button_continue"
         android:theme="@style/Yellow_but"
         android:fontFamily="@font/montserratsemibold"
         android:gravity="center"
@@ -180,7 +180,7 @@
         android:fontFamily="@font/montserratsemibold"
         android:textAllCaps="false"
         android:textSize="19dp"
-        android:background="@drawable/button_continue"
+        android:background="@drawable/ic_button_continue"
         android:theme="@style/Yellow_but"
         android:textColor="@color/grey_text"/>
 

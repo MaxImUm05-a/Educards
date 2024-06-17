@@ -49,7 +49,7 @@
         android:id="@+id/account"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        app:srcCompat="@drawable/account"
+        app:srcCompat="@drawable/ic_account"
         tools:layout_editor_absoluteX="20dp"
         tools:layout_editor_absoluteY="20dp"
         app:layout_constraintStart_toStartOf="20dp"
@@ -101,11 +101,61 @@
             android:layout_height="25dp"
             app:layout_constraintStart_toStartOf="264dp"
             app:layout_constraintTop_toTopOf="10dp"
-            tools:srcCompat="@drawable/search"
+            tools:srcCompat="@drawable/ic_search"
             tools:layout_editor_absoluteX="264dp"
             tools:layout_editor_absoluteY="10dp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:layout_width="308dp"
+        android:layout_height="112dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="200dp"
+        app:layout_constraintStart_toStartOf="26dp"
+        app:layout_constraintTop_toTopOf="124dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="292dp"
+            android:height="29dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="@string/start_study"
+            android:textColor="@color/clean_white"
+            android:textSize="25dp"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_grey_button"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="10dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_info"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratsemibold"
+                android:text="@string/info_start_study"
+                android:textColor="@color/grey_text"
+                android:textSize="19dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,5 +17,8 @@
     <string name="choose_myself">Змінити фото</string>
     <string name="stand_avat">Обрати стандартну</string>
     <string name="enter">ввести</string>
-    <string name="start_study" translatable="false">Як почати навчання?</string>
+    <string name="start_study">Як почати навчання?</string>
+    <string name="info_start_study">Довідка</string>
+    <string name="sets_of_cards">Набори карток</string>
+    <string name="name">НАЗВА</string>
 </resources>
