@@ -21,4 +21,6 @@
     <string name="info_start_study">Довідка</string>
     <string name="sets_of_cards">Набори карток</string>
     <string name="name">НАЗВА</string>
+    <string name="accomplishment">Досягнення</string>
+    <string name="start">Почати</string>
 </resources>
