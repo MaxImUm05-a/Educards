@@ -23,4 +23,6 @@
     <string name="name">НАЗВА</string>
     <string name="accomplishment">Досягнення</string>
     <string name="start">Почати</string>
+    <string name="cards">Картки</string>
+    <string name="tests">Тести</string>
 </resources>
