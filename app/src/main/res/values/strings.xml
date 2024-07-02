@@ -25,4 +25,5 @@
     <string name="start">Почати</string>
     <string name="cards">Картки</string>
     <string name="tests">Тести</string>
+    <string name="selected_cards">Обрані картки</string>
 </resources>

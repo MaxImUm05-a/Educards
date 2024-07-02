@@ -29,12 +29,13 @@
         />
 
     <TextView
-        android:layout_width="211dp"
-        android:layout_height="112dp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:gravity="center"
         android:width="188dp"
         android:height="80dp"
         android:fontFamily="@font/montserratsemibold"
-        android:text="@string/sets_of_cards"
+        android:text="@string/tests"
         android:textColor="@color/white_title"
         android:textSize="45dp"
         tools:layout_editor_absoluteX="104dp"
@@ -44,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
 
-<!--    при написанні джава коду: зробити макет набору і потім їм наповнювати грідлеяот-->
+    <!--    при написанні джава коду: зробити макет набору і потім їм наповнювати грідлеяот-->
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -79,15 +80,6 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 android:layout_marginBottom="8dp"/>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_active_favorite"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                android:layout_marginBottom="8dp"
-                android:layout_marginRight="8dp"/>
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -113,7 +105,8 @@
                 android:layout_width="30dp"
                 android:layout_height="32dp"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/ic_blue_cards"/>
+                app:srcCompat="@drawable/ic_blue_cards"
+                app:tint="@color/black_text"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -121,7 +114,7 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/montserratbold"
                 android:text="@string/cards"
-                android:textColor="@color/light_blue"
+                android:textColor="@color/black_text"
                 android:textSize="8dp"/>
 
         </LinearLayout>
@@ -139,7 +132,8 @@
                 android:layout_width="30dp"
                 android:layout_height="32dp"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/ic_black_tests"/>
+                app:srcCompat="@drawable/ic_black_tests"
+                app:tint="@color/light_blue" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -147,7 +141,7 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/montserratbold"
                 android:text="@string/tests"
-                android:textColor="@color/black_text"
+                android:textColor="@color/light_blue"
                 android:textSize="8dp"/>
 
         </LinearLayout>
