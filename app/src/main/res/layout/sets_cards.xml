@@ -35,6 +35,7 @@
         android:height="80dp"
         android:fontFamily="@font/montserratsemibold"
         android:text="@string/sets_of_cards"
+        android:textAlignment="center"
         android:textColor="@color/white_title"
         android:textSize="45dp"
         tools:layout_editor_absoluteX="104dp"

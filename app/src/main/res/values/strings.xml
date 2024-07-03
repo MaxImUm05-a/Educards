@@ -20,10 +20,15 @@
     <string name="start_study">Як почати навчання?</string>
     <string name="info_start_study">Довідка</string>
     <string name="sets_of_cards">Набори карток</string>
+    <string name="name_set_card">Назва набору карток</string>
     <string name="name">НАЗВА</string>
     <string name="accomplishment">Досягнення</string>
     <string name="start">Почати</string>
     <string name="cards">Картки</string>
     <string name="tests">Тести</string>
     <string name="selected_cards">Обрані картки</string>
+    <string name="concept">Поняття</string>
+    <string name="explanation">Пояснення</string>
+    <string name="example_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet faucibus diam. Sed vestibulum massa sit amet dolor viverra iaculis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras libero leo, tincidunt rutrum malesuada eu, pharetra id velit. </string>
+
 </resources>
