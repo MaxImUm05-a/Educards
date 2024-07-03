@@ -29,6 +29,9 @@
     <string name="selected_cards">Обрані картки</string>
     <string name="concept">Поняття</string>
     <string name="explanation">Пояснення</string>
-    <string name="example_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet faucibus diam. Sed vestibulum massa sit amet dolor viverra iaculis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras libero leo, tincidunt rutrum malesuada eu, pharetra id velit. </string>
-
+    <string name="example_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet faucibus diam.
+        Sed vestibulum massa sit amet dolor viverra iaculis. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+        per inceptos himenaeos. Cras libero leo, tincidunt rutrum malesuada eu, pharetra id velit. </string>
+    <string name="selected">Обрані</string>
+    <string name="theme">Тема</string>
 </resources>
