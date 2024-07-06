@@ -10,6 +10,7 @@
     <string name="data_proces">Натискаючи кнопку «Продовжити», ви погоджуєтеся на обробку персональних даних</string>
     <string name="havent_acc">Ще не маєте акаунту? Створіть його</string>
     <string name="sign_up">Реєстрація</string>
+    <string name="log_in">Вхід</string>
     <string name="name_usr">Ім’я користувача</string>
     <string name="gmail_us">Email</string>
     <string name="have_acc">Вже маєте акаунт? Ввійдіть в нього</string>
@@ -34,4 +35,11 @@
         per inceptos himenaeos. Cras libero leo, tincidunt rutrum malesuada eu, pharetra id velit. </string>
     <string name="selected">Обрані</string>
     <string name="theme">Тема</string>
+    <string name="text">Текст</string>
+    <string name="know">Знаю</string>
+    <string name="idk">Не знаю</string>
+    <string name="hesitate">Вагаюсь</string>
+    <string name="quest_truefalse">Чи правильне твердження нижче?</string>
+    <string name="yes">Так</string>
+    <string name="no">Ні</string>
 </resources>

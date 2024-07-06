@@ -15,6 +15,8 @@
     <color name="black_text">#CD000000</color>
     <color name="white_orange">#E2D4BE</color>
     <color name="light_blue">#007AFF</color>
-
-
+    <color name="nav_background_color">#CC282E3E</color>
+    <color name="green">#466A44</color>
+    <color name="red">#C7495C</color>
+    <color name="orange">#F09837</color>
 </resources>
