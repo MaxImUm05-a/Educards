@@ -44,4 +44,5 @@
     <string name="no">Ні</string>
     <string name="quest_variants">Якому поясненню відповідає поняття нижче?</string>
     <string name="your_answer">Введіть свою відповідь</string>
+    <string name="result">Підсумок</string>
 </resources>
