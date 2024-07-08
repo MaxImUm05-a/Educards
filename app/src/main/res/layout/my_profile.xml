@@ -142,7 +142,7 @@
     <ImageView
         android:layout_width="450dp"
         android:layout_height="351dp"
-        android:layout_marginTop="448dp"
+        android:layout_marginTop="564dp"
         android:src="@drawable/vector_for_my_profff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"

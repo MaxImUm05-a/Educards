@@ -45,4 +45,10 @@
     <string name="quest_variants">Якому поясненню відповідає поняття нижче?</string>
     <string name="your_answer">Введіть свою відповідь</string>
     <string name="result">Підсумок</string>
+    <string name="create_set">Створення набору карток</string>
+    <string name="set_without_name">Набір карток без імені</string>
+    <string name="description">Опис</string>
+    <string name="result_test">Підсумок тесту</string>
+
+
 </resources>

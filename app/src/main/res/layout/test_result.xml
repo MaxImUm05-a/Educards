@@ -7,14 +7,6 @@
     android:background="@color/main_blue"
     android:orientation="vertical">
 
-    <View
-        android:layout_width="412dp"
-        android:layout_height="127dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/ic_wave2">
-    </View>
-
     <ImageButton
         android:layout_width="41dp"
         android:layout_height="40dp"
@@ -23,20 +15,6 @@
         tools:layout_editor_absoluteY="20dp"
         app:layout_constraintStart_toStartOf="20dp"
         app:layout_constraintTop_toTopOf="20dp"/>
-
-    <TextView
-        android:layout_width="275dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/montserratsemibold"
-        android:text="@string/name_set_card"
-        android:textAlignment="center"
-        android:textColor="@color/white_title"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/messages"
@@ -49,6 +27,20 @@
         app:layout_constraintTop_toTopOf="20dp"
         />
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="@string/result_test"
+        android:textAlignment="center"
+        android:textColor="@color/white_title"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="360dp"
@@ -57,6 +49,7 @@
         android:layout_marginTop="116dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -65,14 +58,22 @@
             android:layout_height="wrap_content"
             android:src="@drawable/rounded_grey_card"></ImageView>
 
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/example_text"
-            android:textColor="@color/clean_white"
-            android:textSize="12dp">
+            android:layout_height="wrap_content">
 
-        </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratsemibold"
+                android:text="@string/name_set_card"
+                android:textAlignment="center"
+                android:textColor="@color/white_title"
+                android:textSize="24dp" />
+
+            <!--            потрібно пізніше додати результат тесту  -->
+
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -92,13 +93,14 @@
             android:layout_height="40dp"
             android:layout_gravity="center_vertical"
             android:background="@drawable/rounded_grey_concept"
+            android:backgroundTint="@color/green"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
                 android:layout_gravity="center"
+                android:layout_marginStart="24dp"
                 android:fontFamily="@font/montserratsemibold"
                 android:text="@string/concept"
                 android:textColor="@color/black_text"
@@ -110,19 +112,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_line"
-                android:layout_marginStart="16dp"/>
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_line" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="@string/explanation"
                 android:layout_gravity="center"
+                android:layout_marginStart="16dp"
                 android:fontFamily="@font/montserratsemibold"
+                android:text="@string/explanation"
                 android:textColor="@color/black_text"
-                android:textSize="20dp"/>
-
+                android:textSize="20dp" />
 
 
         </LinearLayout>
@@ -133,15 +134,15 @@
             android:layout_gravity="center_vertical"
             android:layout_marginTop="19dp"
             android:background="@drawable/rounded_grey_concept"
+            android:backgroundTint="@color/red"
             android:orientation="horizontal">
-
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
                 android:layout_gravity="center"
+                android:layout_marginStart="24dp"
                 android:fontFamily="@font/montserratsemibold"
                 android:text="@string/concept"
                 android:textColor="@color/black_text"
@@ -153,18 +154,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_line"
-                android:layout_marginStart="16dp"/>
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_line" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="@string/explanation"
                 android:layout_gravity="center"
+                android:layout_marginStart="16dp"
                 android:fontFamily="@font/montserratsemibold"
+                android:text="@string/explanation"
                 android:textColor="@color/black_text"
-                android:textSize="20dp"/>
+                android:textSize="20dp" />
 
 
         </LinearLayout>
@@ -175,13 +176,14 @@
             android:layout_gravity="center_vertical"
             android:layout_marginTop="19dp"
             android:background="@drawable/rounded_grey_concept"
+            android:backgroundTint="@color/orange"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
                 android:layout_gravity="center"
+                android:layout_marginStart="24dp"
                 android:fontFamily="@font/montserratsemibold"
                 android:text="@string/concept"
                 android:textColor="@color/black_text"
@@ -193,18 +195,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_line"
-                android:layout_marginStart="16dp"/>
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_line" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="@string/explanation"
                 android:layout_gravity="center"
+                android:layout_marginStart="16dp"
                 android:fontFamily="@font/montserratsemibold"
+                android:text="@string/explanation"
                 android:textColor="@color/black_text"
-                android:textSize="20dp"/>
+                android:textSize="20dp" />
 
         </LinearLayout>
 
@@ -214,13 +216,14 @@
             android:layout_gravity="center_vertical"
             android:layout_marginTop="19dp"
             android:background="@drawable/rounded_grey_concept"
+            android:backgroundTint="@color/green"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
                 android:layout_gravity="center"
+                android:layout_marginStart="24dp"
                 android:fontFamily="@font/montserratsemibold"
                 android:text="@string/concept"
                 android:textColor="@color/black_text"
@@ -232,18 +235,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_line"
-                android:layout_marginStart="16dp"/>
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_line" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="@string/explanation"
                 android:layout_gravity="center"
+                android:layout_marginStart="16dp"
                 android:fontFamily="@font/montserratsemibold"
+                android:text="@string/explanation"
                 android:textColor="@color/black_text"
-                android:textSize="20dp"/>
+                android:textSize="20dp" />
 
         </LinearLayout>
 
@@ -253,13 +256,14 @@
             android:layout_gravity="center_vertical"
             android:layout_marginTop="19dp"
             android:background="@drawable/rounded_grey_concept"
+            android:backgroundTint="@color/green"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
                 android:layout_gravity="center"
+                android:layout_marginStart="24dp"
                 android:fontFamily="@font/montserratsemibold"
                 android:text="@string/concept"
                 android:textColor="@color/black_text"
@@ -271,135 +275,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_line"
-                android:layout_marginStart="16dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="@string/explanation"
-                android:layout_gravity="center"
-                android:fontFamily="@font/montserratsemibold"
-                android:textColor="@color/black_text"
-                android:textSize="20dp"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="44dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginTop="19dp"
-            android:background="@drawable/rounded_grey_concept"
-            android:orientation="horizontal">
+                android:src="@drawable/ic_line" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
                 android:layout_gravity="center"
-                android:fontFamily="@font/montserratsemibold"
-                android:text="@string/concept"
-                android:textColor="@color/black_text"
-                android:textSize="20dp">
-
-            </TextView>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_line"
-                android:layout_marginStart="16dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
+                android:fontFamily="@font/montserratsemibold"
                 android:text="@string/explanation"
-                android:layout_gravity="center"
-                android:fontFamily="@font/montserratsemibold"
                 android:textColor="@color/black_text"
-                android:textSize="20dp"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="44dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginTop="19dp"
-            android:background="@drawable/rounded_grey_concept"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_gravity="center"
-                android:fontFamily="@font/montserratsemibold"
-                android:text="@string/concept"
-                android:textColor="@color/black_text"
-                android:textSize="20dp">
-
-            </TextView>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_line"
-                android:layout_marginStart="16dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="@string/explanation"
-                android:layout_gravity="center"
-                android:fontFamily="@font/montserratsemibold"
-                android:textColor="@color/black_text"
-                android:textSize="20dp"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="44dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginTop="19dp"
-            android:background="@drawable/rounded_grey_concept"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_gravity="center"
-                android:fontFamily="@font/montserratsemibold"
-                android:text="@string/concept"
-                android:textColor="@color/black_text"
-                android:textSize="20dp">
-
-            </TextView>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_line"
-                android:layout_marginStart="16dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="@string/explanation"
-                android:layout_gravity="center"
-                android:fontFamily="@font/montserratsemibold"
-                android:textColor="@color/black_text"
-                android:textSize="20dp"/>
+                android:textSize="20dp" />
 
         </LinearLayout>
 
@@ -407,12 +294,13 @@
     </LinearLayout>
 
     <LinearLayout
+        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@color/white_blue"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="6dp">
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="853dp">
 
         <LinearLayout
             android:layout_width="40dp"
@@ -424,10 +312,10 @@
             android:orientation="vertical">
 
             <ImageView
+                app:srcCompat="@drawable/ic_blue_cards"
                 android:layout_width="30dp"
                 android:layout_height="32dp"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/ic_blue_cards" />
+                android:layout_gravity="center" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -450,10 +338,10 @@
             android:orientation="vertical">
 
             <ImageView
+                app:srcCompat="@drawable/ic_black_tests"
                 android:layout_width="30dp"
                 android:layout_height="32dp"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/ic_black_tests" />
+                android:layout_gravity="center" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -485,6 +373,7 @@
         android:src="@drawable/ic_right_back_act"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

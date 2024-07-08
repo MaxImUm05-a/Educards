@@ -19,4 +19,5 @@
     <color name="green">#466A44</color>
     <color name="red">#C7495C</color>
     <color name="orange">#F09837</color>
+    <color name="grey_interact_text">#9BA3B4</color>
 </resources>
