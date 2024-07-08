@@ -158,7 +158,6 @@
             android:background="@drawable/rounded_grey_concept_with_stroke"
             android:gravity="center">
 
-
             <ImageButton
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -231,6 +230,7 @@
     </LinearLayout>
 
 
+    <!--            опис має бути  -->
 
 
 
