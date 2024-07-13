@@ -1,35 +1,40 @@
 package com.example.educards;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class LogIn extends AppCompatActivity {
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+
+public class SignUp extends AppCompatActivity {
 
     private Button button_cont;
-    private Button button_sign;
+    private Button button_log;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.log_in);
+        setContentView(R.layout.sign_up);
 
         button_cont = findViewById(R.id.button_cont);
         button_cont.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LogIn.this, MainActivity.class);
+                Intent intent = new Intent(SignUp.this, MainActivity.class);
                 startActivity(intent);
             }
         });
 
-        button_sign = findViewById(R.id.button_sign);
-        button_sign.setOnClickListener(new View.OnClickListener() {
+        button_log = findViewById(R.id.button_sign);
+        button_log.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LogIn.this, SignUp.class);
+                Intent intent = new Intent(SignUp.this, LogIn.class);
                 startActivity(intent);
             }
         });
