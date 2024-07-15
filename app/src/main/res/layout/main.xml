@@ -203,6 +203,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/start_btn"
                 android:layout_width="300dp"
                 android:layout_height="120dp"
                 android:orientation="horizontal"
