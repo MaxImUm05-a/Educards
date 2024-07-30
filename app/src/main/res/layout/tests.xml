@@ -53,6 +53,7 @@
         tools:layout_editor_absoluteY="127dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/test"
             android:layout_width="140dp"
             android:layout_height="184dp"
             android:background="@drawable/rounded_grey_button"
@@ -93,6 +94,7 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
+            android:id="@+id/cards"
             android:layout_width="40dp"
             android:layout_height="48dp"
             android:orientation="vertical"
@@ -106,7 +108,7 @@
                 android:layout_height="32dp"
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/ic_blue_cards"
-                app:tint="@color/black_text"/>
+                app:tint="@color/light_blue"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -114,7 +116,7 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/montserratbold"
                 android:text="@string/cards"
-                android:textColor="@color/black_text"
+                android:textColor="@color/light_blue"
                 android:textSize="8dp"/>
 
         </LinearLayout>
@@ -133,7 +135,7 @@
                 android:layout_height="32dp"
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/ic_black_tests"
-                app:tint="@color/light_blue" />
+                app:tint="@color/black_text" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -141,7 +143,7 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/montserratbold"
                 android:text="@string/tests"
-                android:textColor="@color/light_blue"
+                android:textColor="@color/black_text"
                 android:textSize="8dp"/>
 
         </LinearLayout>
