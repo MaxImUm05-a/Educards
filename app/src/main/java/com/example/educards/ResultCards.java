@@ -48,8 +48,6 @@ public class ResultCards extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
-
+    }
 }
+
