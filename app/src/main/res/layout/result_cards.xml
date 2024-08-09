@@ -9,6 +9,7 @@
 
 
     <ImageButton
+        android:id="@+id/account"
         android:layout_width="41dp"
         android:layout_height="40dp"
         android:src="@drawable/ic_account"
@@ -329,6 +330,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/tests"
             android:layout_width="40dp"
             android:layout_height="48dp"
             android:layout_gravity="center"
@@ -373,6 +375,7 @@
         android:src="@drawable/ic_right_back_act"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
