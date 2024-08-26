@@ -32,7 +32,7 @@
     <string name="explanation">Пояснення</string>
     <string name="example_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet faucibus diam.
         Sed vestibulum massa sit amet dolor viverra iaculis. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-        per inceptos himenaeos. Cras libero leo, tincidunt rutrum malesuada eu, pharetra id velit. </string>
+        per inceptos himenaeos. </string>
     <string name="selected">Обрані</string>
     <string name="theme">Тема</string>
     <string name="text">Текст</string>
@@ -49,6 +49,7 @@
     <string name="set_without_name">Набір карток без імені</string>
     <string name="description">Опис</string>
     <string name="result_test">Підсумок тесту</string>
-
+    <string name="todo">TODO</string>
+    <string name="start_cards">Розпочати вивчення</string>
 
 </resources>
