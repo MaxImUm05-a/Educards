@@ -11,6 +11,7 @@
     <ImageButton
         android:layout_width="41dp"
         android:layout_height="40dp"
+        android:contentDescription="@string/todo"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:src="@drawable/ic_account"
@@ -26,7 +27,7 @@
         android:text="@string/create_set"
         android:textAlignment="center"
         android:textColor="@color/white_title"
-        android:textSize="25dp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.437"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,6 +37,7 @@
         android:id="@+id/messages"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:contentDescription="@string/todo"
         android:layout_marginStart="64dp"
         android:layout_marginTop="20dp"
         android:src="@drawable/ic_back"
@@ -68,6 +70,7 @@
             <ImageButton
                 android:layout_width="80dp"
                 android:layout_height="80dp"
+                android:contentDescription="@string/todo"
                 android:src="@drawable/ic_plus"
                 android:background="@drawable/dotted_border"
                 android:layout_gravity="center" />
@@ -86,7 +89,7 @@
                 android:text="@string/set_without_name"
                 android:textAlignment="center"
                 android:textColor="@color/grey_interact_text"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="58dp"
@@ -94,7 +97,7 @@
                 android:layout_gravity="center_vertical"
                 android:fontFamily="@font/montserratsemibold"
                 android:text="@string/description"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:textStyle="bold"
                 android:textColor="@color/grey"/>
         </LinearLayout>
@@ -127,7 +130,7 @@
                 android:fontFamily="@font/montserratsemibold"
                 android:text="@string/concept"
                 android:textColor="@color/black_text"
-                android:textSize="20dp">
+                android:textSize="20sp">
 
             </TextView>
 
@@ -146,7 +149,7 @@
                 android:fontFamily="@font/montserratsemibold"
                 android:text="@string/explanation"
                 android:textColor="@color/black_text"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
 
@@ -161,6 +164,7 @@
             <ImageButton
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:contentDescription="@string/todo"
                 android:src="@drawable/ic_plus"></ImageButton>
         </LinearLayout>
 
@@ -197,7 +201,7 @@
                 android:fontFamily="@font/montserratbold"
                 android:text="@string/cards"
                 android:textColor="@color/light_blue"
-                android:textSize="8dp" />
+                android:textSize="8sp" />
 
         </LinearLayout>
 
@@ -223,7 +227,7 @@
                 android:fontFamily="@font/montserratbold"
                 android:text="@string/tests"
                 android:textColor="@color/black"
-                android:textSize="8dp" />
+                android:textSize="8sp" />
 
         </LinearLayout>
 

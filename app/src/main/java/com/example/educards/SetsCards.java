@@ -7,6 +7,7 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -16,6 +17,7 @@ public class SetsCards extends AppCompatActivity {
     private ImageButton account;
     private ImageButton messages;
     private LinearLayout tests;
+    private ConstraintLayout selectionr1c1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +47,15 @@ public class SetsCards extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SetsCards.this, Tests.class);
+                startActivity(intent);
+            }
+        });
+
+        selectionr1c1 = findViewById(R.id.selectionr1c1);
+        selectionr1c1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SetsCards.this, MenuCards.class);
                 startActivity(intent);
             }
         });

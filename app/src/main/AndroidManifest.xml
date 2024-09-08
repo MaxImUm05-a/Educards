@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Educards"
         tools:targetApi="31">
         <activity
+            android:name=".MenuCards"
+            android:exported="false" />
+        <activity
             android:name=".SelectCards"
             android:exported="false" />
         <activity

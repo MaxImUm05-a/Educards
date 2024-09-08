@@ -55,6 +55,7 @@
         android:layout_marginTop="127dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/selectionr1c1"
             android:layout_width="140dp"
             android:layout_height="184dp"
             android:background="@drawable/rounded_grey_button"
@@ -97,6 +98,7 @@
     </GridLayout>
 
     <LinearLayout
+        android:id="@+id/bottom_panel"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@color/white_blue"
@@ -177,5 +179,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginRight="4dp"/>
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/ic_add"
+        app:layout_constraintBottom_toTopOf="@id/bottom_panel"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

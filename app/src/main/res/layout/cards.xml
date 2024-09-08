@@ -9,6 +9,7 @@
     <ImageButton
         android:layout_width="41dp"
         android:layout_height="40dp"
+        android:contentDescription="@string/todo"
         android:src="@drawable/ic_account"
         tools:layout_editor_absoluteX="20dp"
         tools:layout_editor_absoluteY="20dp"
@@ -32,6 +33,7 @@
         android:id="@+id/messages"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:contentDescription="@string/todo"
         app:srcCompat="@drawable/ic_back"
         tools:layout_editor_absoluteX="351dp"
         tools:layout_editor_absoluteY="20dp"
@@ -49,6 +51,7 @@
     <ImageButton
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:contentDescription="@string/todo"
         android:layout_marginStart="4dp"
         android:layout_marginTop="460dp"
         android:src="@drawable/ic_left_back_pas"
@@ -58,6 +61,7 @@
     <ImageButton
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:contentDescription="@string/todo"
         android:layout_marginTop="460dp"
         android:layout_marginEnd="4dp"
         android:src="@drawable/ic_right_back_act"
