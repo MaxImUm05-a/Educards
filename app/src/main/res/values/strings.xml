@@ -51,5 +51,16 @@
     <string name="result_test">Підсумок тесту</string>
     <string name="todo">TODO</string>
     <string name="start_cards">Розпочати вивчення</string>
-
+    <string name="button_account">Акаунта</string>
+    <string name="button_search">Пошуку</string>
+    <string name="button_messages">Сповіщення</string>
+    <string name="button_forward">Вперед</string>
+    <string name="button_back">Назад</string>
+    <string name="button_avat1">Аватар 1</string>
+    <string name="button_avat2">Аватар 2</string>
+    <string name="button_avat3">Аватар 3</string>
+    <string name="button_avat4">Аватар 4</string>
+    <string name="button_avat_my_photo">Фото</string>
+    <string name="button_create_card">Створити</string>
+    <string name="button_show">Показати</string>
 </resources>
