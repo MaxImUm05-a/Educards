@@ -19,6 +19,9 @@
             android:name=".SelectCards"
             android:exported="false" />
         <activity
+            android:name=".CreateSetCards"
+            android:exported="false" />
+        <activity
             android:name=".ResultCards"
             android:exported="false" />
         <activity
@@ -33,6 +36,7 @@
         <activity
             android:name=".SetsCards"
             android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

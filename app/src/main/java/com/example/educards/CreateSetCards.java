@@ -7,29 +7,27 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-public class MenuCards extends AppCompatActivity {
+public class CreateSetCards extends AppCompatActivity {
 
     private ImageButton account;
     private ImageButton messages;
     private LinearLayout tests;
 
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.menu_cards);
+        setContentView(R.layout.create_setcards);
 
         account = findViewById(R.id.account);
         account.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MenuCards.this, MyProfile.class);
+                Intent intent = new Intent(CreateSetCards.this, MyProfile.class);
                 startActivity(intent);
             }
         });
@@ -38,18 +36,19 @@ public class MenuCards extends AppCompatActivity {
         messages.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MenuCards.this, MainActivity.class);
+                Intent intent = new Intent(CreateSetCards.this, MainActivity.class);
                 startActivity(intent);
             }
         });
-
         tests = findViewById(R.id.tests);
         tests.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MenuCards.this, Tests.class);
+                Intent intent = new Intent(CreateSetCards.this, Tests.class);
                 startActivity(intent);
             }
         });
     }
+
+
 }

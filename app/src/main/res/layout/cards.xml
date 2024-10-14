@@ -9,12 +9,12 @@
     <ImageButton
         android:layout_width="41dp"
         android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         android:contentDescription="@string/todo"
         android:src="@drawable/ic_account"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="20dp"
-        app:layout_constraintStart_toStartOf="20dp"
-        app:layout_constraintTop_toTopOf="20dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="275dp"
@@ -24,7 +24,7 @@
         android:text="@string/name_set_card"
         android:textAlignment="center"
         android:textColor="@color/white_title"
-        android:textSize="30dp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -33,15 +33,15 @@
         android:id="@+id/messages"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
         android:contentDescription="@string/todo"
-        app:srcCompat="@drawable/ic_back"
-        tools:layout_editor_absoluteX="351dp"
-        tools:layout_editor_absoluteY="20dp"
-        app:layout_constraintStart_toStartOf="351dp"
-        app:layout_constraintTop_toTopOf="20dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
 
     <View
-        android:layout_width="412dp"
+        android:layout_width="wrap_content"
         android:layout_height="128dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -79,7 +79,7 @@
         android:fontFamily="@font/montserratsemibold"
         android:text="@string/text"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:gravity="center"/>
 
 
@@ -100,7 +100,7 @@
             android:text="@string/know"
             android:gravity="center"
             android:textColor="@color/clean_white"
-            android:textSize="20dp"/>
+            android:textSize="20sp"/>
 
         <Button
             android:layout_width="140dp"
@@ -112,7 +112,7 @@
             android:text="@string/idk"
             android:gravity="center"
             android:textColor="@color/clean_white"
-            android:textSize="20dp"/>
+            android:textSize="20sp"/>
 
     </LinearLayout>
 
@@ -129,6 +129,6 @@
         android:text="@string/hesitate"
         android:gravity="center"
         android:textColor="@color/clean_white"
-        android:textSize="20dp"/>
+        android:textSize="20sp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.example.educards;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -18,7 +19,9 @@ public class SetsCards extends AppCompatActivity {
     private ImageButton messages;
     private LinearLayout tests;
     private ConstraintLayout selectionr1c1;
+    private ImageButton plus;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +59,15 @@ public class SetsCards extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SetsCards.this, MenuCards.class);
+                startActivity(intent);
+            }
+        });
+
+        plus = findViewById(R.id.plus);
+        plus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SetsCards.this, CreateSetCards.class);
                 startActivity(intent);
             }
         });

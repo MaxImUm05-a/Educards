@@ -144,15 +144,14 @@
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:layout_width="450dp"
-        android:layout_height="351dp"
-        android:layout_marginTop="564dp"
-        android:src="@drawable/vector_for_my_profff"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_marginTop="636dp"
+        android:background="@drawable/vector_for_my_profff"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"></View>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
