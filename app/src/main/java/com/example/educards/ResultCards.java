@@ -1,5 +1,6 @@
 package com.example.educards;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -16,12 +17,15 @@ public class ResultCards extends AppCompatActivity {
 
     private ImageButton account;
     private ImageButton messages;
-    private LinearLayout tests;
+    private ImageButton tests;
 
+    @SuppressLint({"MissingInflatedId", "WrongViewCast"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.result_cards);
+
+        hideSystemUI();
 
         account = findViewById(R.id.account);
         account.setOnClickListener(new View.OnClickListener() {
@@ -40,7 +44,7 @@ public class ResultCards extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        tests = findViewById(R.id.tests);
+        tests = findViewById(R.id.black_tests);
         tests.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,6 +52,21 @@ public class ResultCards extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    private void hideSystemUI() {
+        View decorView = getWindow().getDecorView();
+        decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN
+                | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus){
+            hideSystemUI();
+        }
     }
 }
 

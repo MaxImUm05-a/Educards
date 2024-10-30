@@ -37,22 +37,22 @@
         android:text="@string/sets_of_cards"
         android:textAlignment="center"
         android:textColor="@color/white_title"
-        android:textSize="45dp"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="20dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="20dp" />
 
 
-<!--    при написанні джава коду: зробити макет набору і потім їм наповнювати грідлеяот-->
+    <!--    при написанні джава коду: зробити макет набору і потім їм наповнювати грідлеяот-->
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_marginHorizontal="28dp"
-        android:layout_marginTop="127dp">
+        android:layout_marginTop="127dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/selectionr1c1"
@@ -63,6 +63,7 @@
             android:focusable="true">
 
             <View
+                android:id="@+id/view2"
                 android:layout_width="116dp"
                 android:layout_height="124dp"
                 android:layout_marginTop="14dp"
@@ -72,8 +73,9 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:layout_width="54dp"
-                android:layout_height="22dp"
+                android:id="@+id/textView5"
+                android:layout_width="44dp"
+                android:layout_height="20dp"
                 android:layout_marginBottom="8dp"
                 android:fontFamily="@font/interbold"
                 android:text="@string/name"
@@ -83,14 +85,22 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent" />
 
-            <ImageView
+            <ImageButton
+                android:id="@+id/button_star"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="8dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@android:color/transparent"
+                android:importantForAccessibility="no"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:srcCompat="@drawable/ic_active_favorite" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/view2"
+                app:srcCompat="@drawable/ic_active_favorite"
+                tools:ignore="InvalidId" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -98,100 +108,71 @@
     </GridLayout>
 
     <LinearLayout
-        android:id="@+id/bottom_panel"
+        android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@color/white_blue"
+        android:baselineAligned="false"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="6dp">
 
+        <!-- Первый элемент с синими картами -->
         <LinearLayout
-            android:layout_width="40dp"
-            android:layout_height="48dp"
-            android:orientation="vertical"
-            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:clickable="true"
-            android:focusable="true">
+            android:focusable="true"
+            android:gravity="center">
 
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="32dp"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/ic_blue_cards"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:fontFamily="@font/montserratbold"
-                android:text="@string/cards"
-                android:textColor="@color/light_blue"
-                android:textSize="8sp"/>
-
+            <ImageButton
+                android:id="@+id/blue_cards"
+                android:layout_width="58dp"
+                android:layout_height="50dp"
+                android:contentDescription="TODO"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/ic_blue_card"
+                tools:ignore="ContentDescription,HardcodedText" />
         </LinearLayout>
 
+        <!-- Элемент для кнопки "плюс" -->
         <LinearLayout
-            android:id="@+id/tests"
-            android:layout_width="40dp"
-            android:layout_height="48dp"
-            android:orientation="vertical"
-            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/plus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/button_create_card"
+                app:srcCompat="@drawable/ic_add"
+                tools:ignore="InvalidId" />
+        </LinearLayout>
+
+        <!-- Второй элемент с черными тестами -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:clickable="true"
-            android:focusable="true">
+            android:focusable="true"
+            android:gravity="center">
 
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="32dp"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/ic_black_tests"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:fontFamily="@font/montserratbold"
-                android:text="@string/tests"
-                android:textColor="@color/black_text"
-                android:textSize="8sp"/>
-
+            <ImageButton
+                android:id="@+id/black_tests"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:contentDescription="TODO"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/ic_black_test"
+                tools:ignore="ContentDescription,HardcodedText" />
         </LinearLayout>
-
     </LinearLayout>
 
 
-    <ImageButton
-        android:contentDescription="@string/button_back"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        app:srcCompat="@drawable/ic_left_back_pas"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="4dp"/>
-
-
-    <ImageButton
-        android:contentDescription="@string/button_forward"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        app:srcCompat="@drawable/ic_right_back_act"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="4dp"/>
-
-    <ImageButton
-        android:id="@+id/plus"
-        android:contentDescription="@string/button_create_card"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        app:srcCompat="@drawable/ic_add"
-        app:layout_constraintBottom_toTopOf="@id/bottom_panel"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        tools:ignore="InvalidId" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+

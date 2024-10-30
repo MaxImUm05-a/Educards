@@ -63,4 +63,9 @@
     <string name="button_avat_my_photo">Фото</string>
     <string name="button_create_card">Створити</string>
     <string name="button_show">Показати</string>
+    <string name="Language">Мова</string>
+    <string name="Language_ua">українська</string>
+    <string name="Language_ru">русский</string>
+    <string name="Language_en">English</string>
+    <string name="save">Зберегти</string>
 </resources>

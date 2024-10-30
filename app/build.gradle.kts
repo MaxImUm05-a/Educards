@@ -40,6 +40,9 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.activity:activity:1.8.0")
+    implementation ("androidx.drawerlayout:drawerlayout:1.1.1")
+    implementation ("com.google.android.material:material:1.9.0")
+
 
     // Hibernate Core
     implementation("org.hibernate:hibernate-core:6.5.2.Final")

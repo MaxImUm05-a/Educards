@@ -297,6 +297,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@color/white_blue"
@@ -304,60 +305,61 @@
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="6dp">
 
+        <!-- Первый элемент с синими картами -->
         <LinearLayout
-            android:layout_width="40dp"
-            android:layout_height="48dp"
-            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:clickable="true"
             android:focusable="true"
-            android:orientation="vertical">
+            android:gravity="center">
 
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="32dp"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/ic_blue_cards" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:fontFamily="@font/montserratbold"
-                android:text="@string/cards"
-                android:textColor="@color/light_blue"
-                android:textSize="8sp" />
-
+            <ImageButton
+                android:id="@+id/blue_cards"
+                android:layout_width="58dp"
+                android:layout_height="50dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/ic_blue_card"
+                android:background="@android:color/transparent"
+                tools:ignore="ContentDescription,HardcodedText" />
         </LinearLayout>
 
+        <!-- Элемент для кнопки "плюс" -->
         <LinearLayout
-            android:id="@+id/tests"
-            android:layout_width="40dp"
-            android:layout_height="48dp"
-            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/plus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/button_create_card"
+                app:srcCompat="@drawable/ic_add"
+                tools:ignore="InvalidId" />
+        </LinearLayout>
+
+        <!-- Второй элемент с черными тестами -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:clickable="true"
             android:focusable="true"
-            android:orientation="vertical">
+            android:gravity="center">
 
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="32dp"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/ic_black_tests" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:fontFamily="@font/montserratbold"
-                android:text="@string/tests"
-                android:textColor="@color/black"
-                android:textSize="8sp" />
-
+            <ImageButton
+                android:id="@+id/black_tests"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:contentDescription="TODO"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/ic_black_test"
+                tools:ignore="ContentDescription,HardcodedText" />
         </LinearLayout>
-
     </LinearLayout>
+
 
     <ImageButton
         android:layout_width="40dp"

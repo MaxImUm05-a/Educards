@@ -1,11 +1,15 @@
 package com.example.educards;
 
+import static com.example.educards.R.id.black_tests;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.Toast;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -17,15 +21,18 @@ public class SetsCards extends AppCompatActivity {
 
     private ImageButton account;
     private ImageButton messages;
-    private LinearLayout tests;
+    private ImageButton tests;
     private ConstraintLayout selectionr1c1;
     private ImageButton plus;
+    private ImageButton starButton;
 
-    @SuppressLint("MissingInflatedId")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sets_cards);
+
+        hideSystemUI();
 
         account = findViewById(R.id.account);
         account.setOnClickListener(new View.OnClickListener() {
@@ -45,7 +52,7 @@ public class SetsCards extends AppCompatActivity {
             }
         });
 
-        tests = findViewById(R.id.tests);
+        tests = findViewById(black_tests);
         tests.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -71,5 +78,40 @@ public class SetsCards extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        starButton = findViewById(R.id.button_star);
+        final boolean[] isFavorite = {false};
+
+        starButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (isFavorite[0]) {
+                    starButton.setImageResource(R.drawable.ic_active_favorite);
+                    Toast.makeText(SetsCards.this, "Удалено из избранных", Toast.LENGTH_SHORT).show();
+                    isFavorite[0] = false;
+                } else {
+                    starButton.setImageResource(R.drawable.ic_yellow_star);
+                    Toast.makeText(SetsCards.this, "Добавлено в избранные", Toast.LENGTH_SHORT).show();
+                    isFavorite[0] = true;
+                }
+            }
+        });
+
+    }
+
+    private void hideSystemUI() {
+        View decorView = getWindow().getDecorView();
+        decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN
+                | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus){
+            hideSystemUI();
+        }
     }
 }
