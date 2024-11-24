@@ -11,9 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private LinearLayout start_btn;
-    private ImageButton account;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         // Скрываем кнопки навигации
         hideSystemUI();
 
-        start_btn = findViewById(R.id.start_btn);
+        LinearLayout start_btn = findViewById(R.id.start_btn);
         start_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        account = findViewById(R.id.account);
+        ImageButton account = findViewById(R.id.account);
         account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

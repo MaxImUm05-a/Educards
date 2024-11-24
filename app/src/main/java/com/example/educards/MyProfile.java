@@ -60,10 +60,10 @@ public class MyProfile extends AppCompatActivity {
                 editor.apply();
 
                 // Уведомляем пользователя, что имя сохранено
-                Toast.makeText(MyProfile.this, "Ник сохранён", Toast.LENGTH_SHORT).show();
+                android.widget.Toast.makeText(MyProfile.this, "Ник сохранён", android.widget.Toast.LENGTH_SHORT).show();
             } else {
                 // Сообщаем, что имя не введено
-                Toast.makeText(MyProfile.this, "Введите ник", Toast.LENGTH_SHORT).show();
+                android.widget.Toast.makeText(MyProfile.this, "Введите ник", android.widget.Toast.LENGTH_SHORT).show();
             }
         });
     }

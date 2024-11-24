@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/main_blue">
+    android:background="@color/black_background">
 
     <ImageButton
         android:id="@+id/account"
@@ -59,6 +59,7 @@
             android:layout_width="140dp"
             android:layout_height="184dp"
             android:background="@drawable/rounded_grey_button"
+            android:backgroundTint="@color/grey"
             android:clickable="true"
             android:focusable="true">
 
@@ -111,7 +112,7 @@
         android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@color/white_blue"
+        android:background="@color/wave_grey"
         android:baselineAligned="false"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"

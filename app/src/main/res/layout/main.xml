@@ -14,7 +14,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/milk_color_main">
+            android:background="@color/black_background">
 
             <!-- View для верхньої хвилі -->
 
@@ -24,9 +24,10 @@
                 android:id="@+id/wave_top"
                 android:layout_width="wrap_content"
                 android:layout_height="110dp"
-                android:background="@drawable/ic_brown_wave"
+                android:background="@drawable/ic_gray_wave"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                />
 
             <View
                 android:id="@+id/wave_bottom"
@@ -48,7 +49,7 @@
                 android:height="40dp"
                 android:fontFamily="@font/otomanopee"
                 android:text="@string/app_name"
-                android:textColor="@color/white_title"
+                android:textColor="@color/grey_educ"
                 android:textSize="28sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.501"
@@ -105,7 +106,7 @@
                     android:layout_marginStart="16dp"
                     android:fontFamily="@font/montserratsemibold"
                     android:text="@string/search"
-                    android:textColor="@color/white_grey"
+                    android:textColor="@color/black_grey"
                     android:textSize="15sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/view"
@@ -150,7 +151,7 @@
                     android:height="29dp"
                     android:fontFamily="@font/montserratsemibold"
                     android:text="@string/start_study"
-                    android:textColor="@color/clean_white"
+                    android:textColor="@color/black_grey"
                     android:textSize="25sp" />
 
                 <LinearLayout
@@ -164,20 +165,20 @@
                     tools:layout_editor_absoluteY="10dp">
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="47dp"
+                        android:layout_height="43dp"
                         android:layout_marginTop="10dp"
                         app:srcCompat="@drawable/ic_info" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"
                         android:layout_marginTop="16dp"
                         android:fontFamily="@font/montserratsemibold"
                         android:text="@string/info_start_study"
-                        android:textColor="@color/grey_text"
-                        android:textSize="19dp" />
+                        android:textColor="@color/black_grey"
+                        android:textSize="19sp" />
 
                 </LinearLayout>
 
@@ -190,7 +191,6 @@
                 android:layout_height="120dp"
                 android:layout_marginTop="100dp"
                 android:background="@drawable/rounded_grey_button"
-                android:backgroundTint="@color/milk_white"
                 android:clickable="true"
 
                 android:focusable="true"
@@ -210,12 +210,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="35dp"
                     android:fontFamily="@font/montserratsemibold"
                     android:text="@string/accomplishment"
-                    android:textColor="@color/black_text"
-                    android:textSize="30dp" />
+                    android:textColor="@color/black_grey"
+                    android:textSize="30sp" />
 
             </LinearLayout>
 
@@ -227,6 +227,7 @@
                 android:background="@drawable/rounded_grey_button"
                 android:clickable="true"
                 android:focusable="true"
+                android:backgroundTint="@color/start_button"
                 android:orientation="horizontal"
                 app:layout_constraintHorizontal_bias="0.504"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -248,8 +249,8 @@
                     android:layout_marginTop="25dp"
                     android:fontFamily="@font/montserratsemibold"
                     android:text="@string/start"
-                    android:textColor="@color/black_text"
-                    android:textSize="44dp" />
+                    android:textColor="@color/start_white"
+                    android:textSize="44sp" />
 
             </LinearLayout>
 
@@ -269,7 +270,9 @@
         app:itemIconTint="@color/white"
         android:background="@color/nav_background_color"
         app:menu="@menu/navigation_menu"
+
         />
+
 
 
 

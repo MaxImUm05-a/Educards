@@ -8,7 +8,6 @@ import android.widget.Button;
 
 public class LogIn extends AppCompatActivity {
 
-    private Button button_cont;
     private Button button_sign;
 
     @Override
@@ -16,7 +15,7 @@ public class LogIn extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.log_in);
 
-        button_cont = findViewById(R.id.button_cont);
+        Button button_cont = findViewById(R.id.button_cont);
         button_cont.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

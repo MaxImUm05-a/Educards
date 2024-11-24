@@ -13,15 +13,12 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class SignUp extends AppCompatActivity {
 
-    private Button button_cont;
-    private Button button_log;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_up);
 
-        button_cont = findViewById(R.id.button_cont);
+        Button button_cont = findViewById(R.id.button_cont);
         button_cont.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,7 +27,7 @@ public class SignUp extends AppCompatActivity {
             }
         });
 
-        button_log = findViewById(R.id.button_sign);
+        Button button_log = findViewById(R.id.button_sign);
         button_log.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

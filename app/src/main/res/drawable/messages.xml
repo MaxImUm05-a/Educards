@@ -6,10 +6,10 @@
 
   <path
       android:pathData="M0.541,20a19.73,20 0,1 0,39.459 0a19.73,20 0,1 0,-39.459 0z"
-      android:fillColor="#CECECC"/>
+      android:fillColor="@color/white_for_acc"/>
   <path
       android:pathData="M20,20m-20,0a20,20 0,1 1,40 0a20,20 0,1 1,-40 0"
-      android:fillColor="#CECECC"/>
+      android:fillColor="@color/white_for_acc"/>
   <path
       android:pathData="M26.189,17C26.189,15.409 25.566,13.883 24.456,12.757C23.346,11.632 21.84,11 20.27,11C18.701,11 17.195,11.632 16.085,12.757C14.975,13.883 14.351,15.409 14.351,17C14.351,24 11.392,26 11.392,26H29.149C29.149,26 26.189,24 26.189,17Z"
       android:strokeLineJoin="round"

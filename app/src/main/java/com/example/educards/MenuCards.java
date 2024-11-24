@@ -15,11 +15,6 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MenuCards extends AppCompatActivity {
 
-    private ImageButton account;
-    private ImageButton messages;
-    private ImageButton tests;
-    private ImageButton plus;
-
     @SuppressLint({"MissingInflatedId", "WrongViewCast"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +23,7 @@ public class MenuCards extends AppCompatActivity {
 
         hideSystemUI();
 
-        account = findViewById(R.id.account);
+        ImageButton account = findViewById(R.id.account);
         account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,7 +32,7 @@ public class MenuCards extends AppCompatActivity {
             }
         });
 
-        messages = findViewById(R.id.messages);
+        ImageButton messages = findViewById(R.id.messages);
         messages.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,7 +41,7 @@ public class MenuCards extends AppCompatActivity {
             }
         });
 
-        tests = findViewById(R.id.black_tests);
+        ImageButton tests = findViewById(R.id.black_tests);
         tests.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,7 +50,7 @@ public class MenuCards extends AppCompatActivity {
             }
         });
 
-        plus = findViewById(R.id.plus);
+        ImageButton plus = findViewById(R.id.plus);
         plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

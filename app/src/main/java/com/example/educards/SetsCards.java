@@ -19,11 +19,6 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class SetsCards extends AppCompatActivity {
 
-    private ImageButton account;
-    private ImageButton messages;
-    private ImageButton tests;
-    private ConstraintLayout selectionr1c1;
-    private ImageButton plus;
     private ImageButton starButton;
 
 
@@ -34,7 +29,7 @@ public class SetsCards extends AppCompatActivity {
 
         hideSystemUI();
 
-        account = findViewById(R.id.account);
+        ImageButton account = findViewById(R.id.account);
         account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,7 +38,7 @@ public class SetsCards extends AppCompatActivity {
             }
         });
 
-        messages = findViewById(R.id.messages);
+        ImageButton messages = findViewById(R.id.messages);
         messages.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,7 +47,7 @@ public class SetsCards extends AppCompatActivity {
             }
         });
 
-        tests = findViewById(black_tests);
+        ImageButton tests = findViewById(black_tests);
         tests.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,7 +56,7 @@ public class SetsCards extends AppCompatActivity {
             }
         });
 
-        selectionr1c1 = findViewById(R.id.selectionr1c1);
+        ConstraintLayout selectionr1c1 = findViewById(R.id.selectionr1c1);
         selectionr1c1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,7 +65,7 @@ public class SetsCards extends AppCompatActivity {
             }
         });
 
-        plus = findViewById(R.id.plus);
+        ImageButton plus = findViewById(R.id.plus);
         plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

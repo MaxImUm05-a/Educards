@@ -15,10 +15,6 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class SelectCards extends AppCompatActivity {
 
-    private ImageButton account;
-    private ImageButton messages;
-    private ImageButton tests;
-
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +23,7 @@ public class SelectCards extends AppCompatActivity {
 
         hideSystemUI();
 
-        account = findViewById(R.id.account);
+        ImageButton account = findViewById(R.id.account);
         account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,7 +32,7 @@ public class SelectCards extends AppCompatActivity {
             }
         });
 
-        messages = findViewById(R.id.messages);
+        ImageButton messages = findViewById(R.id.messages);
         messages.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,7 +41,7 @@ public class SelectCards extends AppCompatActivity {
             }
         });
 
-        tests = findViewById(R.id.black_tests);
+        ImageButton tests = findViewById(R.id.black_tests);
         tests.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

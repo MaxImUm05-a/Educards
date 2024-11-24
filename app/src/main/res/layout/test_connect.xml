@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/main_blue">
+    android:background="@color/black_background">
 
     <ImageButton
         android:layout_width="41dp"
@@ -97,10 +97,11 @@
             android:layout_width="150dp"
             android:layout_height="60dp"
             android:background="@drawable/rounded_grey_button"
+            android:backgroundTint="@color/grey"
             android:fontFamily="@font/montserratsemibold"
             android:text="@string/concept"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:gravity="center"
             android:layout_margin="10dp"/>
 
@@ -108,10 +109,11 @@
             android:layout_width="150dp"
             android:layout_height="60dp"
             android:background="@drawable/rounded_grey_button"
+            android:backgroundTint="@color/grey"
             android:fontFamily="@font/montserratsemibold"
             android:text="@string/explanation"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:gravity="center"
             android:layout_margin="10dp"/>
 
@@ -119,10 +121,11 @@
             android:layout_width="150dp"
             android:layout_height="60dp"
             android:background="@drawable/rounded_grey_button"
+            android:backgroundTint="@color/grey"
             android:fontFamily="@font/montserratsemibold"
             android:text="@string/concept"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:gravity="center"
             android:layout_margin="10dp"/>
 
@@ -130,10 +133,11 @@
             android:layout_width="150dp"
             android:layout_height="60dp"
             android:background="@drawable/rounded_grey_button"
+            android:backgroundTint="@color/grey"
             android:fontFamily="@font/montserratsemibold"
             android:text="@string/explanation"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:gravity="center"
             android:layout_margin="10dp"/>
 
@@ -141,10 +145,11 @@
             android:layout_width="150dp"
             android:layout_height="60dp"
             android:background="@drawable/rounded_grey_button"
+            android:backgroundTint="@color/grey"
             android:fontFamily="@font/montserratsemibold"
             android:text="@string/concept"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:gravity="center"
             android:layout_margin="10dp"/>
 
@@ -152,10 +157,11 @@
             android:layout_width="150dp"
             android:layout_height="60dp"
             android:background="@drawable/rounded_grey_button"
+            android:backgroundTint="@color/grey"
             android:fontFamily="@font/montserratsemibold"
             android:text="@string/explanation"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:gravity="center"
             android:layout_margin="10dp"/>
 
@@ -163,10 +169,11 @@
             android:layout_width="150dp"
             android:layout_height="60dp"
             android:background="@drawable/rounded_grey_button"
+            android:backgroundTint="@color/grey"
             android:fontFamily="@font/montserratsemibold"
             android:text="@string/concept"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:gravity="center"
             android:layout_margin="10dp"/>
 
@@ -174,10 +181,11 @@
             android:layout_width="150dp"
             android:layout_height="60dp"
             android:background="@drawable/rounded_grey_button"
+            android:backgroundTint="@color/grey"
             android:fontFamily="@font/montserratsemibold"
             android:text="@string/explanation"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:gravity="center"
             android:layout_margin="10dp"/>
 
@@ -185,10 +193,11 @@
             android:layout_width="150dp"
             android:layout_height="60dp"
             android:background="@drawable/rounded_grey_button"
+            android:backgroundTint="@color/grey"
             android:fontFamily="@font/montserratsemibold"
             android:text="@string/concept"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:gravity="center"
             android:layout_margin="10dp"/>
 
@@ -196,10 +205,11 @@
             android:layout_width="150dp"
             android:layout_height="60dp"
             android:background="@drawable/rounded_grey_button"
+            android:backgroundTint="@color/grey"
             android:fontFamily="@font/montserratsemibold"
             android:text="@string/explanation"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:gravity="center"
             android:layout_margin="10dp"/>
 

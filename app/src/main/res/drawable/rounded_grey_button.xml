@@ -6,6 +6,6 @@
         android:bottom="4dp"
         android:left="4dp"
         android:right="4dp" />
-    <solid android:color="@color/milk_white" />
+    <solid android:color="@color/black_gray1" />
 
 </shape>

@@ -4,6 +4,7 @@
     <string name="search">Пошук</string>
     <string name="login">Вхід</string>
     <string name="user_name">Ім’я користувача /Email</string>
+    <string name="user_name1">Nickname</string>
     <string name="choose_name">Оберіть мову</string>
     <string name="password">Пароль</string>
     <string name="continuee">Продовжити</string>

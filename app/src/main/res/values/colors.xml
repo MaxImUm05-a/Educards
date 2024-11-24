@@ -16,9 +16,9 @@
     <color name="white_orange">#E2D4BE</color>
     <color name="light_blue">#007AFF</color>
     <color name="nav_background_color">#CC282E3E</color>
-    <color name="green">#466A44</color>
-    <color name="red">#C7495C</color>
-    <color name="orange">#F09837</color>
+    <color name="green">#66BB6A</color>
+    <color name="red">#EF5350</color>
+    <color name="orange">#FFB74D</color>
     <color name="grey_interact_text">#9BA3B4</color>
     <color name="light_green">#83DBB9</color>
     <color name="purple_500">#6200EE</color>
@@ -27,4 +27,18 @@
     <color name="teal_700">#018786</color>
     <color name="milk_color_main">#D5C391</color>
     <color name="milk_white">#F2ECE0</color>
+    <color name="wave_grey">#3B3B3B</color>
+    <color name="black_background">#1C1C1C</color>
+    <color name="white_new">#E0E0E0</color>
+    <color name="grey_educ">#B0B0B0</color>
+    <color name="white_for_acc">#F0F0F0</color>
+    <color name="black_gray1">#2C2C2C</color>
+    <color name="start_white">#E0E0E0</color>
+    <color name="start_button">#333333</color>
+    <color name="account_person">#323232</color>
+    <color name="blue">#3A7BD5</color>
+    <color name="orange_back">#2980B9</color>
+    <color name="grey_left_ic">#959595</color>
+
+
 </resources>
