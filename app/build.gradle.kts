@@ -43,12 +43,12 @@ dependencies {
     implementation ("androidx.drawerlayout:drawerlayout:1.1.1")
     implementation ("com.google.android.material:material:1.9.0")
 
+    // Room
+    val roomVersion = "2.6.1"
 
-    // Hibernate Core
-    implementation("org.hibernate:hibernate-core:6.5.2.Final")
-
-    // SQLite
-    implementation("org.xerial:sqlite-jdbc:3.46.0.1")
+    implementation("androidx.room:room-runtime:$roomVersion")
+    annotationProcessor("androidx.room:room-compiler:$roomVersion") // Для Kotlin
+    implementation("androidx.room:room-ktx:$roomVersion") // Для інтеграції з Coroutines
 
     // Lombok
     implementation("org.projectlombok:lombok:1.18.34")
