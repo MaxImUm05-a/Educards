@@ -43,6 +43,8 @@ dependencies {
     implementation ("androidx.drawerlayout:drawerlayout:1.1.1")
     implementation ("com.google.android.material:material:1.9.0")
 
+    implementation("redis.clients:jedis:5.2.0")
+
     // Room
     val roomVersion = "2.6.1"
 
