@@ -55,6 +55,7 @@
         tools:ignore="MissingConstraints">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card_tap"
             android:layout_width="140dp"
             android:layout_height="184dp"
             android:background="@drawable/rounded_grey_button"
@@ -86,7 +87,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_active_favorite"
+                app:srcCompat="@drawable/ic_yellow_star"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 android:layout_marginBottom="8dp"

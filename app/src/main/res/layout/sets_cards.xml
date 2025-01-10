@@ -55,7 +55,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/selectionr1c1"
+            android:id="@+id/card_tap"
             android:layout_width="140dp"
             android:layout_height="184dp"
             android:background="@drawable/rounded_grey_button"

@@ -7,6 +7,7 @@
     android:background="@color/black_background">
 
     <ImageButton
+        android:id="@+id/account"
         android:layout_width="41dp"
         android:layout_height="40dp"
         android:layout_marginStart="20dp"
@@ -62,6 +63,7 @@
     </View>
 
     <ImageButton
+        android:id="@+id/back"
         android:contentDescription="@string/button_back"
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -72,6 +74,7 @@
         android:layout_marginBottom="48dp"/>
 
     <ImageButton
+        android:id="@+id/next"
         android:contentDescription="@string/button_forward"
         android:layout_width="40dp"
         android:layout_height="40dp"

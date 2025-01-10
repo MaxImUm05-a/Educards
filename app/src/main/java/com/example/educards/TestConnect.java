@@ -5,18 +5,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-public class TestTF extends AppCompatActivity {
-
+public class TestConnect extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.test_truefalse);
+        setContentView(R.layout.test_connect);
 
         hideSystemUI();
 
@@ -24,23 +19,15 @@ public class TestTF extends AppCompatActivity {
         account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TestTF.this, MyProfile.class);
+                Intent intent = new Intent(TestConnect.this, MyProfile.class);
                 startActivity(intent);
             }
         });
-        ImageButton nextbutt = findViewById(R.id.next);
+        ImageButton nextbutt = findViewById(R.id.account);
         nextbutt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TestTF.this, TestTF.class);
-                startActivity(intent);
-            }
-        });
-        ImageButton backbutt = findViewById(R.id.back);
-        backbutt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(TestTF.this, TestConnect.class);
+                Intent intent = new Intent(TestConnect.this, TestTF.class);
                 startActivity(intent);
             }
         });
@@ -52,7 +39,7 @@ public class TestTF extends AppCompatActivity {
                 finish(); // має повертати на попередній екран :)
             }
         });
-    }
+}
     private void hideSystemUI() {
         View decorView = getWindow().getDecorView();
         decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN

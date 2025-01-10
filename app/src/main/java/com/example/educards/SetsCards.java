@@ -42,8 +42,9 @@ public class SetsCards extends AppCompatActivity {
         messages.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SetsCards.this, MainActivity.class);
-                startActivity(intent);
+                //Intent intent = new Intent(Cards.this, MainActivity.class);
+                //startActivity(intent);
+                finish(); // має повертати на попередній екран :)
             }
         });
 
@@ -56,7 +57,7 @@ public class SetsCards extends AppCompatActivity {
             }
         });
 
-        ConstraintLayout selectionr1c1 = findViewById(R.id.selectionr1c1);
+        ConstraintLayout selectionr1c1 = findViewById(R.id.card_tap);
         selectionr1c1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -83,11 +84,11 @@ public class SetsCards extends AppCompatActivity {
             public void onClick(View v) {
                 if (isFavorite[0]) {
                     starButton.setImageResource(R.drawable.ic_active_favorite);
-                    Toast.makeText(SetsCards.this, "Удалено из избранных", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SetsCards.this, "Видалено з вибраних", Toast.LENGTH_SHORT).show();
                     isFavorite[0] = false;
                 } else {
                     starButton.setImageResource(R.drawable.ic_yellow_star);
-                    Toast.makeText(SetsCards.this, "Добавлено в избранные", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SetsCards.this, "Додано у вибране", Toast.LENGTH_SHORT).show();
                     isFavorite[0] = true;
                 }
             }

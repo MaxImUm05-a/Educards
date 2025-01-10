@@ -36,7 +36,7 @@ public class ResultCards extends AppCompatActivity {
         messages.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ResultCards.this, MainActivity.class);
+                Intent intent = new Intent(ResultCards.this, MenuCards.class);
                 startActivity(intent);
             }
         });
@@ -45,6 +45,14 @@ public class ResultCards extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ResultCards.this, Tests.class);
+                startActivity(intent);
+            }
+        });
+        ImageButton plus = findViewById(R.id.plus);
+        plus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ResultCards.this, CreateSetCards.class);
                 startActivity(intent);
             }
         });

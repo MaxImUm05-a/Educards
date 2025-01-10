@@ -164,11 +164,12 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:layout_width="54dp"
-            android:layout_height="22dp"
+            android:layout_width="44dp"
+            android:layout_height="20dp"
             android:layout_marginBottom="8dp"
             android:fontFamily="@font/interbold"
             android:text="@string/name"
+            android:gravity="center"
             android:textColor="@color/black_text"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"

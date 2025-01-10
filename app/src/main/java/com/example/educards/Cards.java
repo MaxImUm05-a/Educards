@@ -1,34 +1,33 @@
 package com.example.educards;
 
-import android.annotation.SuppressLint;
+import static com.example.educards.R.id.black_tests;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Tests extends AppCompatActivity {
+public class Cards extends AppCompatActivity {
 
-    @SuppressLint({"MissingInflatedId", "WrongViewCast"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tests);
+        setContentView(R.layout.menu_cards);
 
         hideSystemUI();
 
         ImageButton account = findViewById(R.id.account);
         account.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Tests.this, MyProfile.class);
+                Intent intent = new Intent(Cards.this, MyProfile.class);
                 startActivity(intent);
             }
         });
@@ -42,22 +41,11 @@ public class Tests extends AppCompatActivity {
                 finish(); // має повертати на попередній екран :)
             }
         });
-
-        ImageButton test = findViewById(R.id.test1);
-        test.setOnClickListener(new View.OnClickListener() {
+        ImageButton tests = findViewById(black_tests);
+        tests.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Tests.this, TestConnect.class);
-                startActivity(intent);
-            }
-        });
-
-
-        ImageButton plus = findViewById(R.id.plus);
-        plus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Tests.this, CreateSetCards.class);
+                Intent intent = new Intent(Cards.this, Tests.class);
                 startActivity(intent);
             }
         });

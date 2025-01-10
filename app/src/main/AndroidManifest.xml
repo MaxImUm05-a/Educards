@@ -25,6 +25,15 @@
             android:exported="false"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
+            android:name=".Cards"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".TestConnect"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
             android:name=".ResultCards"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>

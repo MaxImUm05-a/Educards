@@ -35,8 +35,9 @@ public class CreateSetCards extends AppCompatActivity {
         messages.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CreateSetCards.this, MainActivity.class);
-                startActivity(intent);
+                //Intent intent = new Intent(Cards.this, MainActivity.class);
+                //startActivity(intent);
+                finish(); // має повертати на попередній екран :)
             }
         });
         ImageButton tests = findViewById(black_tests);
