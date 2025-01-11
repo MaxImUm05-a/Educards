@@ -1,57 +1,49 @@
 package com.example.educards;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
-import androidx.activity.EdgeToEdge;
-import androidx.activity.EdgeToEdge;
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-public class ResultCards extends AppCompatActivity {
-
+public class TestVariants extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.result_cards);
-
+        setContentView(R.layout.test_variants);
         hideSystemUI();
 
         ImageButton account = findViewById(R.id.account);
         account.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ResultCards.this, MyProfile.class);
+                Intent intent = new Intent(TestVariants.this, MyProfile.class);
                 startActivity(intent);
             }
         });
+        ImageButton nextbutt = findViewById(R.id.next);
+        nextbutt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TestVariants.this, TestWrite.class);
+                startActivity(intent);
+            }
+        });
+        ImageButton backbutt = findViewById(R.id.back);
+        backbutt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TestVariants.this, TestTF.class);
+                startActivity(intent);
+            }
+        });
+
         ImageButton messages = findViewById(R.id.messages);
         messages.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ResultCards.this, MenuCards.class);
-                startActivity(intent);
-            }
-        });
-        ImageButton tests = findViewById(R.id.black_tests);
-        tests.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ResultCards.this, Tests.class);
-                startActivity(intent);
-            }
-        });
-        ImageButton plus = findViewById(R.id.plus);
-        plus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ResultCards.this, CreateSetCards.class);
+                Intent intent = new Intent(TestVariants.this, Tests.class);
                 startActivity(intent);
             }
         });
@@ -67,9 +59,12 @@ public class ResultCards extends AppCompatActivity {
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
-        if (hasFocus){
+        if (hasFocus) {
             hideSystemUI();
         }
     }
 }
+
+
+
 

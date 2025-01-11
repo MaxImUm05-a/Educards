@@ -52,6 +52,14 @@ public class Tests extends AppCompatActivity {
             }
         });
 
+        ImageButton cards = findViewById(R.id.black_cards);
+        cards.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Tests.this, Cards.class);
+                startActivity(intent);
+            }
+        });
 
         ImageButton plus = findViewById(R.id.plus);
         plus.setOnClickListener(new View.OnClickListener() {

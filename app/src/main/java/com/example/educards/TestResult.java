@@ -1,24 +1,17 @@
 package com.example.educards;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
-import androidx.activity.EdgeToEdge;
-import androidx.activity.EdgeToEdge;
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-public class ResultCards extends AppCompatActivity {
-
+public class TestResult extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.result_cards);
+        setContentView(R.layout.test_result);
 
         hideSystemUI();
 
@@ -27,7 +20,7 @@ public class ResultCards extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ResultCards.this, MyProfile.class);
+                Intent intent = new Intent(TestResult.this, MyProfile.class);
                 startActivity(intent);
             }
         });
@@ -35,15 +28,15 @@ public class ResultCards extends AppCompatActivity {
         messages.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ResultCards.this, MenuCards.class);
+                Intent intent = new Intent(TestResult.this, MenuCards.class);
                 startActivity(intent);
             }
         });
-        ImageButton tests = findViewById(R.id.black_tests);
-        tests.setOnClickListener(new View.OnClickListener() {
+        ImageButton cards = findViewById(R.id.black_cards);
+        cards.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ResultCards.this, Tests.class);
+                Intent intent = new Intent(TestResult.this, Cards.class);
                 startActivity(intent);
             }
         });
@@ -51,7 +44,7 @@ public class ResultCards extends AppCompatActivity {
         plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ResultCards.this, CreateSetCards.class);
+                Intent intent = new Intent(TestResult.this, CreateSetCards.class);
                 startActivity(intent);
             }
         });
@@ -72,4 +65,5 @@ public class ResultCards extends AppCompatActivity {
         }
     }
 }
+
 

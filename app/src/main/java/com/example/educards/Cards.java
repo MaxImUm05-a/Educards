@@ -1,24 +1,19 @@
 package com.example.educards;
 
-import static com.example.educards.R.id.black_tests;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class Cards extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.menu_cards);
+        setContentView(R.layout.cards);
 
         hideSystemUI();
 
@@ -32,20 +27,20 @@ public class Cards extends AppCompatActivity {
             }
         });
 
+        ImageButton nextbut = findViewById(R.id.next);
+        nextbut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Cards.this, ResultCards.class);
+                startActivity(intent);
+
+            }
+        });
         ImageButton messages = findViewById(R.id.messages);
         messages.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(Cards.this, MainActivity.class);
-                //startActivity(intent);
-                finish(); // має повертати на попередній екран :)
-            }
-        });
-        ImageButton tests = findViewById(black_tests);
-        tests.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Cards.this, Tests.class);
+                Intent intent = new Intent(Cards.this, MenuCards.class);
                 startActivity(intent);
             }
         });
@@ -61,7 +56,7 @@ public class Cards extends AppCompatActivity {
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
-        if (hasFocus){
+        if (hasFocus) {
             hideSystemUI();
         }
     }
