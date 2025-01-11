@@ -1,25 +1,40 @@
 package com.example.educards;
 
+import static androidx.activity.OnBackPressedDispatcherKt.addCallback;
 import static com.example.educards.R.id.black_tests;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.GridLayout;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.room.Room;
+import androidx.room.RoomDatabase;
+import androidx.sqlite.db.SupportSQLiteDatabase;
+
+import java.util.List;
 
 public class SetsCards extends AppCompatActivity {
 
     private ImageButton starButton;
+    private GridLayout selelections_layout;
+
+    CardDatabase cardDB;
+
+    List<CardsSelection> selectionsList;
 
 
     @Override
@@ -28,6 +43,46 @@ public class SetsCards extends AppCompatActivity {
         setContentView(R.layout.sets_cards);
 
         hideSystemUI();
+
+        selectionsList = cardDB.getCardsSelectionDAO().getAllCardsSelection();
+
+        selelections_layout = findViewById(R.id.selections);
+        LayoutInflater inflater = LayoutInflater.from(this);
+
+        for (int i = 0; i < selectionsList.size(); i++){
+            View itemView = inflater.inflate(R.layout.cardset_maket, selelections_layout, false);
+
+            TextView selection_name = itemView.findViewById(R.id.selection_name);
+            ImageButton selection_like = itemView.findViewById(R.id.selection_like);
+
+            selection_name.setText(selectionsList.get(i).getName());
+            if (selectionsList.get(i).isLike()){selection_like.setImageResource(R.drawable.ic_active_favorite);}
+            else {selection_like.setImageResource(R.drawable.ic_passive_favorite);}
+
+            GridLayout.LayoutParams params = new GridLayout.LayoutParams();
+            params.width = GridLayout.LayoutParams.WRAP_CONTENT;
+            params.height = GridLayout.LayoutParams.WRAP_CONTENT;
+            params.setMargins(8, 8, 8, 8);
+
+            itemView.setLayoutParams(params);
+            selelections_layout.addView(itemView);
+        }
+
+
+        RoomDatabase.Callback myCallBack = new RoomDatabase.Callback() {
+            @Override
+            public void onCreate(@NonNull SupportSQLiteDatabase db) {
+                super.onCreate(db);
+            }
+
+            @Override
+            public void onOpen(@NonNull SupportSQLiteDatabase db) {
+                super.onOpen(db);
+            }
+        };
+
+        cardDB = Room.databaseBuilder(getApplicationContext(), CardDatabase.class,
+            "CardDB").addCallback(myCallBack).build();
 
         ImageButton account = findViewById(R.id.account);
         account.setOnClickListener(new View.OnClickListener() {
@@ -76,7 +131,7 @@ public class SetsCards extends AppCompatActivity {
         });
 
 
-        starButton = findViewById(R.id.button_star);
+        starButton = findViewById(R.id.selection_like);
         final boolean[] isFavorite = {false};
 
         starButton.setOnClickListener(new View.OnClickListener() {

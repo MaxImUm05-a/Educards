@@ -1,0 +1,52 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_tap"
+    android:layout_width="140dp"
+    android:layout_height="184dp"
+    android:background="@drawable/rounded_grey_button"
+    android:backgroundTint="@color/grey"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/selection_image"
+        android:layout_width="116dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/rounded_black_grey_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/selection_name"
+        android:layout_width="44dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/interbold"
+        android:text="@string/name"
+        android:textColor="@color/black_text"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        android:id="@+id/selection_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@android:color/transparent"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/selection_name"
+        app:layout_constraintTop_toBottomOf="@+id/selection_image"
+        app:srcCompat="@drawable/ic_active_favorite"
+        tools:ignore="InvalidId" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,7 +19,7 @@ public class Card {
     int id;
 
     @ColumnInfo(name="Concept")
-    String Concept;
+    String сoncept;
 
     @ColumnInfo(name="Explanation")
     String Explanation;
@@ -41,11 +41,11 @@ public class Card {
     }
 
     public String getConcept() {
-        return Concept;
+        return сoncept;
     }
 
     public void setConcept(String concept) {
-        Concept = concept;
+        сoncept = concept;
     }
 
     public String getExplanation() {
