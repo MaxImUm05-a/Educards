@@ -13,20 +13,20 @@ public class Test {
     int id;
 
     @ColumnInfo(name="Mark")
-    int Mark;
+    int mark;
 
     @Ignore
     public Test(){}
 
     public Test(int mark) {
-        Mark = mark;
+        this.mark = mark;
     }
 
     public int getMark() {
-        return Mark;
+        return this.mark;
     }
 
     public void setMark(int mark) {
-        Mark = mark;
+        this.mark = mark;
     }
 }

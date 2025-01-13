@@ -19,47 +19,47 @@ public class Question {
     int id;
 
     @ColumnInfo(name="Type")
-    String Type;
+    String type;
 
     @ColumnInfo(name="Rightness")
-    int Rightness;
+    int rightness;
 
     @ColumnInfo(name="Content")
-    String Content;
+    String content;
 
     @ColumnInfo(name="TestId")
-    int TestId;
+    int testId;
 
     @Ignore
     public Question(){}
 
     public Question(String type, int rightness, String content) {
-        Type = type;
-        Rightness = rightness;
-        Content = content;
+        this.type = type;
+        this.rightness = rightness;
+        this.content = content;
     }
 
     public String getType() {
-        return Type;
+        return this.type;
     }
 
     public void setType(String type) {
-        Type = type;
+        this.type = type;
     }
 
     public int getRightness() {
-        return Rightness;
+        return this.rightness;
     }
 
     public void setRightness(int rightness) {
-        Rightness = rightness;
+        this.rightness = rightness;
     }
 
     public String getContent() {
-        return Content;
+        return this.content;
     }
 
     public void setContent(String content) {
-        Content = content;
+        this.content = content;
     }
 }

@@ -13,44 +13,44 @@ public class CardsSelection {
     int id;
 
     @ColumnInfo(name="Name")
-    String Name;
+    String name;
 
     @ColumnInfo(name="Description")
-    String Description;
+    String description;
 
     @ColumnInfo(name="Like")
-    boolean Like;
+    boolean like;
 
     @Ignore
     public CardsSelection(){}
 
     public CardsSelection(String name, String description) {
-        Name = name;
-        Description = description;
-        Like = false;
+        this.name = name;
+        this.description = description;
+        this.like = false;
     }
 
     public String getName() {
-        return Name;
+        return this.name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public String getDescription() {
-        return Description;
+        return this.description;
     }
 
     public void setDescription(String description) {
-        Description = description;
+        this.description = description;
     }
 
     public boolean isLike() {
-        return Like;
+        return this.like;
     }
 
     public void setLike(boolean like) {
-        Like = like;
+        this.like = like;
     }
 }

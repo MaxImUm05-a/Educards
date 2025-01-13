@@ -19,48 +19,48 @@ public class Card {
     int id;
 
     @ColumnInfo(name="Concept")
-    String сoncept;
+    String concept;
 
     @ColumnInfo(name="Explanation")
-    String Explanation;
+    String explanation;
 
     @ColumnInfo(name="KnowledgeLevel")
-    int KnowledgeLevel;
+    int knowledgeLevel;
 
     @ColumnInfo(name="SelectionId")
-    int SelectionId;
+    int selectionId;
 
     @Ignore
     public Card(){}
 
     public Card(String concept, String explanation, int knowledgeLevel, int selectionId) {
-        Concept = concept;
-        Explanation = explanation;
-        KnowledgeLevel = knowledgeLevel;
-        SelectionId = selectionId;
+        this.concept = concept;
+        this.explanation = explanation;
+        this.knowledgeLevel = knowledgeLevel;
+        this.selectionId = selectionId;
     }
 
     public String getConcept() {
-        return сoncept;
+        return this.concept;
     }
 
     public void setConcept(String concept) {
-        сoncept = concept;
+        this.concept = concept;
     }
 
     public String getExplanation() {
-        return Explanation;
+        return this.explanation;
     }
 
     public void setExplanation(String explanation) {
-        Explanation = explanation;
+        this.explanation = explanation;
     }
 
     public int getKnowledgeLevel() {
-        return KnowledgeLevel;
+        return this.knowledgeLevel;
     }
 
     public void setKnowledgeLevel(int knowledgeLevel) {
-        KnowledgeLevel = knowledgeLevel;
+        this.knowledgeLevel = knowledgeLevel;
     }
 }

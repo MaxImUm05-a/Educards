@@ -11,7 +11,7 @@ public class SelectionWithTests {
     public CardsSelection selection;
 
     @Relation(
-            parentColumn = "Selection_id",
+            parentColumn = "CardsSelection_id",
             entityColumn = "Test_id",
             associateBy = @Junction(TestsHaveSelections.class)
     )

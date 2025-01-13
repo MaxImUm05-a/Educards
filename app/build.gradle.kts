@@ -6,6 +6,7 @@ android {
     namespace = "com.example.educards"
     compileSdk = 35
 
+
     defaultConfig {
         applicationId = "com.example.educards"
         minSdk = 26
