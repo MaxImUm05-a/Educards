@@ -1,5 +1,6 @@
 plugins {
     id("com.android.application")
+    id("io.freefair.lombok") version "8.0.1"
 }
 
 android {
@@ -54,10 +55,8 @@ dependencies {
     implementation("androidx.room:room-ktx:$roomVersion") // Для інтеграції з Coroutines
 
     // Lombok
-    implementation("org.projectlombok:lombok:1.18.34")
+    compileOnly("org.projectlombok:lombok:1.18.34")
     annotationProcessor("org.projectlombok:lombok:1.18.34")
-    testImplementation("org.projectlombok:lombok:1.18.34")
-    testAnnotationProcessor("org.projectlombok:lombok:1.18.34")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

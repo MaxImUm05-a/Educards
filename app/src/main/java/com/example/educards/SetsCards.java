@@ -25,6 +25,7 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class SetsCards extends AppCompatActivity {
@@ -45,8 +46,14 @@ public class SetsCards extends AppCompatActivity {
         hideSystemUI();
 
         selectionsList = cardDB.getCardsSelectionDAO().getAllCardsSelection();
+        if (selectionsList == null) {
+            selectionsList = new ArrayList<>();
+        }
 
         selelections_layout = findViewById(R.id.selections);
+        if (selelections_layout == null) {
+            throw new IllegalStateException("Selections layout not found in sets_cards.xml");
+        }
         LayoutInflater inflater = LayoutInflater.from(this);
 
         for (int i = 0; i < selectionsList.size(); i++){
@@ -112,14 +119,14 @@ public class SetsCards extends AppCompatActivity {
             }
         });
 
-        ConstraintLayout selectionr1c1 = findViewById(R.id.card_tap);
-        selectionr1c1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SetsCards.this, MenuCards.class);
-                startActivity(intent);
-            }
-        });
+//        ConstraintLayout selectionr1c1 = findViewById(R.id.card_tap);
+//        selectionr1c1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(SetsCards.this, MenuCards.class);
+//                startActivity(intent);
+//            }
+//        });
 
         ImageButton plus = findViewById(R.id.plus);
         plus.setOnClickListener(new View.OnClickListener() {
@@ -131,23 +138,23 @@ public class SetsCards extends AppCompatActivity {
         });
 
 
-        starButton = findViewById(R.id.selection_like);
-        final boolean[] isFavorite = {false};
-
-        starButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (isFavorite[0]) {
-                    starButton.setImageResource(R.drawable.ic_active_favorite);
-                    Toast.makeText(SetsCards.this, "Видалено з вибраних", Toast.LENGTH_SHORT).show();
-                    isFavorite[0] = false;
-                } else {
-                    starButton.setImageResource(R.drawable.ic_yellow_star);
-                    Toast.makeText(SetsCards.this, "Додано у вибране", Toast.LENGTH_SHORT).show();
-                    isFavorite[0] = true;
-                }
-            }
-        });
+//        starButton = findViewById(R.id.selection_like);
+//        final boolean[] isFavorite = {false};
+//
+//        starButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (isFavorite[0]) {
+//                    starButton.setImageResource(R.drawable.ic_active_favorite);
+//                    Toast.makeText(SetsCards.this, "Видалено з вибраних", Toast.LENGTH_SHORT).show();
+//                    isFavorite[0] = false;
+//                } else {
+//                    starButton.setImageResource(R.drawable.ic_yellow_star);
+//                    Toast.makeText(SetsCards.this, "Додано у вибране", Toast.LENGTH_SHORT).show();
+//                    isFavorite[0] = true;
+//                }
+//            }
+//        });
 
     }
 
