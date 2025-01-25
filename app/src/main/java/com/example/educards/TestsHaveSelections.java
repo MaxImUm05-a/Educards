@@ -6,10 +6,10 @@ import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "TestsHaveSelections",
-        primaryKeys = {"Relation_id", "Selection_id", "Test_id"},
+        primaryKeys = {"Relation_id", "CardsSelection_id", "Test_id"},
         foreignKeys = {
                 @ForeignKey(entity = CardsSelection.class,
-                        parentColumns = "Selection_id", childColumns = "Selection_id"),
+                        parentColumns = "CardsSelection_id", childColumns = "CardsSelection_id"),
                 @ForeignKey(entity = Test.class,
                         parentColumns = "Test_id", childColumns = "Test_id")
         }
@@ -19,9 +19,9 @@ public class TestsHaveSelections {
     @PrimaryKey(autoGenerate = true)
     int id;
 
-    @ColumnInfo(name="Selection_id")
-    public int Selection_id;
+    @ColumnInfo(name="CardsSelection_id")
+    public int cardsselection_id;
 
     @ColumnInfo(name="Test_id")
-    public int Test_id;
+    public int test_id;
 }

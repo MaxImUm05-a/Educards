@@ -12,7 +12,7 @@ public class TestWithSelections {
 
     @Relation(
             parentColumn = "Test_id",
-            entityColumn = "Selection_id",
+            entityColumn = "CardsSelection_id",
             associateBy = @Junction(TestsHaveSelections.class)
     )
     public List<CardsSelection> selections;

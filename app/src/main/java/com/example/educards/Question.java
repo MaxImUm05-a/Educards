@@ -4,14 +4,16 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.Ignore;
+import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "Question", foreignKeys = @ForeignKey(
         entity = Test.class,
         parentColumns = "Test_id",
         childColumns = "TestId",
-        onDelete = ForeignKey.CASCADE
-))
+        onDelete = ForeignKey.CASCADE),
+        indices = @Index(value = "TestId")
+)
 public class Question {
 
     @ColumnInfo(name="Question_id")

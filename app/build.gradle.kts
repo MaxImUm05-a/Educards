@@ -6,6 +6,7 @@ plugins {
 android {
     namespace = "com.example.educards"
     compileSdk = 35
+    buildToolsVersion = "34.0.0"
 
 
     defaultConfig {
