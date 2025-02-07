@@ -78,23 +78,23 @@ public class SelectCards extends AppCompatActivity {
         });
 
 
-        ImageButton starButton = findViewById(R.id.button_star);
-        final boolean[] isFavorite = {false};
+//        ImageButton starButton = findViewById(R.id.button_star);
+//        final boolean[] isFavorite = {false};
     
-            starButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (isFavorite[0]) {
-                    starButton.setImageResource(R.drawable.ic_active_favorite);
-                    Toast.makeText(SelectCards.this, "Видалено з вибраних", Toast.LENGTH_SHORT).show();
-                    isFavorite[0] = false;
-                } else {
-                    starButton.setImageResource(R.drawable.ic_yellow_star);
-                    Toast.makeText(SelectCards.this, "Додано у вибране", Toast.LENGTH_SHORT).show();
-                    isFavorite[0] = true;
-                }
-            }
-        });
+//        starButton.setOnClickListener(new View.OnClickListener() {
+//        @Override
+//        public void onClick(View v) {
+//            if (isFavorite[0]) {
+//                starButton.setImageResource(R.drawable.ic_active_favorite);
+//                Toast.makeText(SelectCards.this, "Видалено з вибраних", Toast.LENGTH_SHORT).show();
+//                isFavorite[0] = false;
+//            } else {
+//                starButton.setImageResource(R.drawable.ic_yellow_star);
+//                Toast.makeText(SelectCards.this, "Додано у вибране", Toast.LENGTH_SHORT).show();
+//                isFavorite[0] = true;
+//            }
+//        }
+//        });
 
 }
     private void hideSystemUI() {

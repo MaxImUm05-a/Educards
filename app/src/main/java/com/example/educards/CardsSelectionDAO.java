@@ -29,10 +29,6 @@ public interface CardsSelectionDAO {
     public CardsSelection getCardsSelection(int CardsSelection_id);
 
     @Transaction
-    @Query("SELECT * FROM CardsSelection WHERE CardsSelection_id==:CardsSelection_id")
-    SelectionWithCards getSelectionWithCards(int CardsSelection_id);
-
-    @Transaction
-    @Query("SELECT * FROM CardsSelection WHERE CardsSelection_id==:Selection_id")
-    SelectionWithTests getSelectionWithTests(int Selection_id);
+    @Query("SELECT * FROM CardsSelection")
+    public List<SelectionWithCards> getSelectionWithCards();
 }

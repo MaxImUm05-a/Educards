@@ -7,12 +7,13 @@ import androidx.room.Ignore;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = "Card", foreignKeys = @ForeignKey(
-        entity = CardsSelection.class,
-        parentColumns = "CardsSelection_id",
-        childColumns = "SelectionId",
-        onDelete = ForeignKey.CASCADE),
-        indices = @Index(value = "SelectionId")
+@Entity(tableName = "Card"
+//        foreignKeys = @ForeignKey(
+//        entity = CardsSelection.class,
+//        parentColumns = "CardsSelection_id",
+//        childColumns = "SelectionId",
+//        onDelete = ForeignKey.CASCADE),
+//        indices = {@Index(value = "SelectionId")}
 )
 public class Card {
 

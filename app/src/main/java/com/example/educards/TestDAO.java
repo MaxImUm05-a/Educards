@@ -27,11 +27,11 @@ public interface TestDAO {
     @Query("SELECT * FROM Test WHERE Test_id==:Test_id")
     public Test getTest(int Test_id);
 
-    @Transaction
-    @Query("SELECT * FROM Test WHERE Test_id==:Test_id")
-    TestWithQuestions getTestWithQuestions(int Test_id);
-
-    @Transaction
-    @Query("SELECT * FROM Test WHERE Test_id==:Test_id")
-    TestWithSelections getTestWithSelections(int Test_id);
+//    @Transaction
+//    @Query("SELECT * FROM Test WHERE Test_id==:Test_id")
+//    TestWithQuestions getTestWithQuestions(int Test_id);
+//
+//    @Transaction
+//    @Query("SELECT * FROM Test WHERE Test_id==:Test_id")
+//    TestWithSelections getTestWithSelections(int Test_id);
 }
