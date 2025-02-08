@@ -30,8 +30,8 @@ public class Question {
     @ColumnInfo(name="Content")
     String content;
 
-//    @ColumnInfo(name="TestId")
-//    int testId;
+    @ColumnInfo(name="TestId")
+    int testId;
 
     @Ignore
     public Question(){}

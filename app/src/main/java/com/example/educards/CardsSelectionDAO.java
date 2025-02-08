@@ -31,4 +31,8 @@ public interface CardsSelectionDAO {
     @Transaction
     @Query("SELECT * FROM CardsSelection")
     public List<SelectionWithCards> getSelectionWithCards();
+
+    @Transaction
+    @Query("SELECT * FROM CardsSelection")
+    public List<SelectionWithTests> getSelectionWithTest();
 }
