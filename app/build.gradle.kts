@@ -1,8 +1,9 @@
 plugins {
     id("com.android.application")
     id("kotlin-android")
-    id("kotlin-kapt") // підтримка KAPT
+//    id("kotlin-kapt") // підтримка KAPT
     id("io.freefair.lombok") version "8.0.1"
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -32,8 +33,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
 
     packaging {
@@ -45,6 +46,9 @@ android {
 }
 
 dependencies {
+//    implementation("com.google.devtools.ksp:symbol-processing-api:1.9.24-1.0.17")
+//    ksp("com.google.devtools.ksp:symbol-processing:1.9.24-1.0.17")
+
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.activity:activity:1.8.0")
@@ -58,12 +62,16 @@ dependencies {
     val roomVersion = "2.6.1"
 
     implementation("androidx.room:room-runtime:$roomVersion")
-    kapt("androidx.room:room-compiler:$roomVersion") // Для Kotlin
-    implementation("androidx.room:room-ktx:$roomVersion") // Для інтеграції з Coroutines
+//    annotationProcessor("androidx.room:room-compiler:$roomVersion")
+    ksp("androidx.room:room-compiler:$roomVersion")
+//    implementation("androidx.room:room-ktx:$roomVersion") // Для інтеграції з Coroutines
+
+    implementation("com.google.dagger:hilt-android:2.50")
+    ksp("com.google.dagger:hilt-compiler:2.50")
 
     // Lombok
     compileOnly("org.projectlombok:lombok:1.18.34")
-    annotationProcessor("org.projectlombok:lombok:1.18.34")
+    ksp("org.projectlombok:lombok:1.18.34")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
@@ -71,10 +79,10 @@ dependencies {
 }
 
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(21)
 }
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "21"
     }
 }

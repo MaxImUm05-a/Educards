@@ -33,7 +33,7 @@ public class SetsCards extends AppCompatActivity {
     private ImageButton starButton;
     private GridLayout selelections_layout;
 
-    CardDatabase cardDB;
+    private CardDatabase cardDB;
 
     List<CardsSelection> selectionsList;
 
@@ -44,6 +44,21 @@ public class SetsCards extends AppCompatActivity {
         setContentView(R.layout.sets_cards);
 
         hideSystemUI();
+
+        RoomDatabase.Callback myCallBack = new RoomDatabase.Callback() {
+            @Override
+            public void onCreate(@NonNull SupportSQLiteDatabase db) {
+                super.onCreate(db);
+            }
+
+            @Override
+            public void onOpen(@NonNull SupportSQLiteDatabase db) {
+                super.onOpen(db);
+            }
+        };
+
+        cardDB = Room.databaseBuilder(getApplicationContext(), CardDatabase.class,
+                "CardDB").addCallback(myCallBack).build();
 
         selectionsList = cardDB.getCardsSelectionDAO().getAllCardsSelection();
         if (selectionsList == null) {
@@ -56,7 +71,7 @@ public class SetsCards extends AppCompatActivity {
         }
         LayoutInflater inflater = LayoutInflater.from(this);
 
-        for (int i = 0; i < selectionsList.size(); i++){
+        if (selectionsList != null) {for (int i = 0; i < selectionsList.size(); i++){
             View itemView = inflater.inflate(R.layout.cardset_maket, selelections_layout, false);
 
             TextView selection_name = itemView.findViewById(R.id.selection_name);
@@ -73,23 +88,7 @@ public class SetsCards extends AppCompatActivity {
 
             itemView.setLayoutParams(params);
             selelections_layout.addView(itemView);
-        }
-
-
-        RoomDatabase.Callback myCallBack = new RoomDatabase.Callback() {
-            @Override
-            public void onCreate(@NonNull SupportSQLiteDatabase db) {
-                super.onCreate(db);
-            }
-
-            @Override
-            public void onOpen(@NonNull SupportSQLiteDatabase db) {
-                super.onOpen(db);
-            }
-        };
-
-        cardDB = Room.databaseBuilder(getApplicationContext(), CardDatabase.class,
-            "CardDB").addCallback(myCallBack).build();
+        }}
 
         ImageButton account = findViewById(R.id.account);
         account.setOnClickListener(new View.OnClickListener() {
