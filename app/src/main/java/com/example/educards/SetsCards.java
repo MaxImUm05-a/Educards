@@ -45,9 +45,12 @@ public class SetsCards extends AppCompatActivity {
 
         hideSystemUI();
 
+        selectionsList = new ArrayList<>();
         selectionsList = cardDB.getCardsSelectionDAO().getAllCardsSelection();
+        boolean sList = true;
         if (selectionsList == null) {
             selectionsList = new ArrayList<>();
+            sList = false;
         }
 
         selelections_layout = findViewById(R.id.selections);
@@ -56,7 +59,7 @@ public class SetsCards extends AppCompatActivity {
         }
         LayoutInflater inflater = LayoutInflater.from(this);
 
-        for (int i = 0; i < selectionsList.size(); i++){
+        if (sList) {for (int i = 0; i < selectionsList.size(); i++){
             View itemView = inflater.inflate(R.layout.cardset_maket, selelections_layout, false);
 
             TextView selection_name = itemView.findViewById(R.id.selection_name);
@@ -73,7 +76,7 @@ public class SetsCards extends AppCompatActivity {
 
             itemView.setLayoutParams(params);
             selelections_layout.addView(itemView);
-        }
+        }}
 
 
         RoomDatabase.Callback myCallBack = new RoomDatabase.Callback() {

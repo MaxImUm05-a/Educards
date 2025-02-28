@@ -7,13 +7,13 @@ import androidx.room.Ignore;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = "Card"
-//        foreignKeys = @ForeignKey(
-//        entity = CardsSelection.class,
-//        parentColumns = "CardsSelection_id",
-//        childColumns = "SelectionId",
-//        onDelete = ForeignKey.CASCADE),
-//        indices = {@Index(value = "SelectionId")}
+@Entity(tableName = "Card",
+        foreignKeys = @ForeignKey(
+        entity = CardsSelection.class,
+        parentColumns = "CardsSelection_id",
+        childColumns = "SelectionId",
+        onDelete = ForeignKey.CASCADE),
+        indices = {@Index(value = "SelectionId")}
 )
 public class Card {
 
@@ -42,6 +42,15 @@ public class Card {
         this.knowledgeLevel = knowledgeLevel;
         this.selectionId = selectionId;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
 
     public String getConcept() {
         return this.concept;

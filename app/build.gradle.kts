@@ -1,7 +1,7 @@
 plugins {
     id("com.android.application")
-    id("kotlin-android")
-    id("kotlin-kapt") // підтримка KAPT
+//    id("kotlin-android")
+//    id("kotlin-kapt") // підтримка KAPT
     id("io.freefair.lombok") version "8.0.1"
 }
 
@@ -14,7 +14,7 @@ android {
     defaultConfig {
         applicationId = "com.example.educards"
         minSdk = 26
-        targetSdk = 34
+//        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -58,8 +58,8 @@ dependencies {
     val roomVersion = "2.6.1"
 
     implementation("androidx.room:room-runtime:$roomVersion")
-    kapt("androidx.room:room-compiler:$roomVersion") // Для Kotlin
-    implementation("androidx.room:room-ktx:$roomVersion") // Для інтеграції з Coroutines
+    annotationProcessor("androidx.room:room-compiler:$roomVersion") // Для Kotlin
+//    implementation("androidx.room:room-ktx:$roomVersion") // Для інтеграції з Coroutines
 
     // Lombok
     compileOnly("org.projectlombok:lombok:1.18.34")
@@ -70,11 +70,11 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
 
-kotlin {
-    jvmToolchain(17)
-}
-tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
-    kotlinOptions {
-        jvmTarget = "17"
-    }
-}
+//kotlin {
+//    jvmToolchain(17)
+//}
+//tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+//    kotlinOptions {
+//        jvmTarget = "17"
+//    }
+//}

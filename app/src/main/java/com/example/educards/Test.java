@@ -22,6 +22,16 @@ public class Test {
         this.mark = mark;
     }
 
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+
     public int getMark() {
         return this.mark;
     }

@@ -7,13 +7,13 @@ import androidx.room.Ignore;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = "Question"
-//        foreignKeys = @ForeignKey(
-//        entity = Test.class,
-//        parentColumns = "Test_id",
-//        childColumns = "TestId",
-//        onDelete = ForeignKey.CASCADE),
-//        indices = {@Index(value = "TestId")}
+@Entity(tableName = "Question",
+        foreignKeys = @ForeignKey(
+        entity = Test.class,
+        parentColumns = "Test_id",
+        childColumns = "TestId",
+        onDelete = ForeignKey.CASCADE),
+        indices = {@Index(value = "TestId")}
 )
 public class Question {
 
@@ -41,6 +41,15 @@ public class Question {
         this.rightness = rightness;
         this.content = content;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
 
     public String getType() {
         return this.type;
